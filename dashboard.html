@@ -1,0 +1,857 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>PVLSE | Dashboard</title>
+	<meta name="description" content="PVLSE - Dashboard">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Place favicon.ico in the root directory -->
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+	<link rel="icon" href="favicon.png" type="image/x-icon"/>
+	<link rel="stylesheet" href="sass/all-fontawesome.min.css">
+	<link rel="stylesheet" href="js/vendor/jquery-ui.css">
+	<link rel="stylesheet" href="sass/screen.css">
+	
+</head>
+
+<body class="page category">
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+	your browser</a> to improve your experience and security.</p>
+<![endif]-->
+<header>
+	<nav>
+		<div class="container container-top">
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title>
+						<path stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+				</span>
+			</button>
+			<a href="index.html" class="logo">
+				<img src="img/logo.svg" alt=""/>
+			</a>
+			<div class="navbar row" id="navbar">
+				<div class="col-12 col-sm-12 col-md-8 col-lg-8 nav-menu-left">
+					<span>
+						<span class="nav-link nav-link-install-text">Install app</span>
+						<a href="https://apps.apple.com/us/app/pvlse/id1409396043" class="nav-link nav-icon apple"></a>
+						<a href="https://play.google.com/store/apps/details?id=com.thepvlse.app&hl=en" class="nav-link nav-icon google-play"></a>
+					</span>
+				</div>
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 nav-menu-right">
+					<a href="create-pvlse.html" class="nav-link nav-create">+CREATE</a>
+					<a href="wishlist.html" class="nav-link nav-icon wishlist"></a>
+					<a href="#" class="nav-link nav-icon inbox"></a>
+					<div class="dropdown dropdown-account">
+						<a href="#" class="nav-link nav-account selected" data-toggle="dropdown" aria-expanded="false">
+							<img src="img/users/user1.png" alt="" class="nav-avatar"/>
+						</a>
+						<div class="dropdown-menu dropdown-toggle-admin" id="dropdown-toggle-admin">
+							<a href="my-profile.html" class="dropdown-nav-link">
+								My profile
+							</a>
+							<a href="#" class="dropdown-nav-link active">
+								Dashboard
+							</a>
+							<a href="payments.html" class="dropdown-nav-link">
+								Payments & Cashout
+							</a>
+							<a href="wallet.html" class="dropdown-nav-link">
+								Wallet
+							</a>
+							<a href="joined-pvlses.html" class="dropdown-nav-link">
+								Joined pvlses <span>(9 upcoming)</span>
+							</a>
+							<a href="created-pvlses.html" class="dropdown-nav-link">
+								Created pvlses <span>(12 upcoming)</span>
+							</a>
+							<!--<a href="index.html" class="dropdown-nav-link">
+								Log Out
+							</a>-->
+							<button class="logout-btn">Log Out</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>
+<section class="section dashboard-pannel">
+	<div class="container">
+		<div class="section-wrap-titles">
+			<div class="breadcrumb-pvlses">
+				<a href="index.html" class="breadcrumb-item">
+					My account
+				</a>
+				<div class="breadcrumb-sep">/</div>
+				<div>Dashboard</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<h2 class="section-title section-title-account">DASHBOARD</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-sm-5 col-md-5 col-lg-4 col-walett col-dashboard-top total-earning">
+				<div class="card card-dashboard-top">
+					<div class="card-title">TOTAL EARNINGS
+					</div>
+					<div class="number-important">985
+					</div>
+					<div class="date">Since Month 2020</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-7 col-md-7 col-lg-8 col-walett col-dashboard-top">
+				<div class="card">
+					<div id="chart1" class="chart1">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section dashboard-pannel">
+	<div class="container">		
+		<div class="row">
+			<div class="col-12 col-sm-5 col-md-5 col-lg-4 wrap-calendar">
+				<div id="datepicker"></div>
+			</div>
+			<div class="col-12 col-sm-7 col-md-7 col-lg-8 col-calendar-expand">
+				<div class="card">
+					<div class="calendar-expand-section">
+						<div class="calendar-expand-section-title">Joined</div>
+						<div class="calendar-expand-joined-item">
+							Fitness group class with personal trainor, advansed or beginners
+							<span>May 12, 2020</span>
+						</div>
+						<div class="calendar-expand-joined-item">
+							Fitness group class with personal trainor, advansed or beginners
+							<span>May 14, 2020</span>
+						</div>
+					</div>
+					<div class="calendar-expand-section">
+						<div class="calendar-expand-section-title created">Created</div>
+						<div class="calendar-expand-created-item">
+							Acroyoga lesson with advanced poses.
+							<span>May 24, 2020</span>
+						</div>
+						<div class="calendar-expand-created-item">
+							Acroyoga lesson with advanced poses.
+							<span>May 24, 2020</span>
+						</div>
+						<div class="calendar-expand-created-item">
+							Acroyoga lesson with advanced poses.
+							<span>May 24, 2020</span>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section section-pvlses">
+	<div class="container">
+		<div class="row row-pvlses">
+			<div class="col-12">
+				<h2 class="section-title">YOUR MOST POPULAR PVLSE</h2>
+			</div>
+			<div class="carousel horizon slide" data-ride="carousel" id="carousel-p1">				
+				<a class="carousel-control-prev" href="#carousel-p1" data-slide="prev">
+					<span class="carousel-control-prev-icon"><i class="fas fa-angle-left"></i></span>
+				</a>
+				<a class="carousel-control-next" href="#carousel-p1" data-slide="next">
+					<span class="carousel-control-next-icon"><i class="fas fa-angle-right"></i></span>
+				</a>
+				<div class="carousel-inner" role="listbox">			  
+				  <div class="carousel-item active">
+					<div class="col-12 col-md-3">
+						<div class="card-pvlse">
+							<div class="wrap-img">
+								<a href="details-page.html">
+									<img src="img/landingpage/popular4.jpg" alt="" />
+								</a>
+								<span class="price-tag price-tag-free">FREE</span>
+								<span class="fa fa-heart wishlist-icon" id="wishlist-icon4"></span>		
+							</div>
+							<div class="wrap-details">
+								<div class="comment">
+									Yoga workout on the beach with group
+								</div>
+								<div class="author">Created by Don Norman</div>	
+								<div class="star-part">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<div class="row-details top-details">
+									<div class="location">
+										<span class="icons">
+											<i class="fas fa-map-marker-alt"></i>
+										</span>
+										London, UK
+									</div>
+									<div class="top-details-right">86 reviews</div>
+								</div>
+								<div class="row-details top-details">
+									<div class="date">
+										<span class="icons">
+											<i class="fas fa-calendar-alt"></i>
+										</span>
+										4 february 2020
+									</div>
+									<div class="top-details-right"><span class="strong">18/20</span> joined</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				  </div>
+				  <div class="carousel-item">
+					<div class="col-12 col-md-3">
+						<div class="card-pvlse">
+							<div class="wrap-img">
+								<a href="details-page.html">
+									<img src="img/landingpage/popular2.jpg" alt="" />
+								</a>
+								<span class="price-tag price-tag-coin">£ 45</span>
+								<span class="fa fa-heart-o wishlist-icon" id="wishlist-icon2"></span>
+							</div>
+							<div class="wrap-details">
+								<div class="comment">
+									Yoga workout on the beach with group
+								</div>
+								<div class="author">Created by Don Norman</div>	
+								<div class="star-part">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<div class="row-details top-details">
+									<div class="location">
+										<span class="icons">
+											<i class="fas fa-map-marker-alt"></i>
+										</span>
+										London, UK
+									</div>
+									<div class="top-details-right">86 reviews</div>
+								</div>
+								<div class="row-details top-details">
+									<div class="date">
+										<span class="icons">
+											<i class="fas fa-calendar-alt"></i>
+										</span>
+										4 february 2020
+									</div>
+									<div class="top-details-right"><span class="strong">18/20</span> joined</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				  </div>
+				  <div class="carousel-item">
+					<div class="col-12 col-md-3">
+						<div class="card-pvlse">
+							<div class="wrap-img">
+								<a href="details-page.html">
+									<img src="img/landingpage/popular1.jpg" alt="" />
+								</a>
+								<span class="price-tag price-tag-coin">£ 45</span>
+								<span class="fa fa-heart-o wishlist-icon" id="wishlist-icon2"></span>
+							</div>
+							<div class="wrap-details">
+								<div class="comment">
+									Yoga workout on the beach with group
+								</div>
+								<div class="author">Created by Don Norman</div>	
+								<div class="star-part">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<div class="row-details top-details">
+									<div class="location">
+										<span class="icons">
+											<i class="fas fa-map-marker-alt"></i>
+										</span>
+										London, UK
+									</div>
+									<div class="top-details-right">86 reviews</div>
+								</div>
+								<div class="row-details top-details">
+									<div class="date">
+										<span class="icons">
+											<i class="fas fa-calendar-alt"></i>
+										</span>
+										4 february 2020
+									</div>
+									<div class="top-details-right"><span class="strong">18/20</span> joined</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				  </div>
+				  <div class="carousel-item">
+					<div class="col-12 col-md-3">
+						<div class="card-pvlse">
+							<div class="wrap-img">
+								<a href="details-page.html">
+									<img src="img/landingpage/popular3.jpg" alt="" />
+								</a>
+								<span class="price-tag price-tag-coin">£ 45</span>
+								<span class="fa fa-heart-o wishlist-icon" id="wishlist-icon2"></span>
+							</div>
+							<div class="wrap-details">
+								<div class="comment">
+									Yoga workout on the beach with group
+								</div>
+								<div class="author">Created by Don Norman</div>	
+								<div class="star-part">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<div class="row-details top-details">
+									<div class="location">
+										<span class="icons">
+											<i class="fas fa-map-marker-alt"></i>
+										</span>
+										London, UK
+									</div>
+									<div class="top-details-right">86 reviews</div>
+								</div>
+								<div class="row-details top-details">
+									<div class="date">
+										<span class="icons">
+											<i class="fas fa-calendar-alt"></i>
+										</span>
+										4 february 2020
+									</div>
+									<div class="top-details-right"><span class="strong">18/20</span> joined</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				  </div>				 		  		  
+				</div>			  
+			</div>			
+		</div>
+	</div>
+</section>
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 footer-links">
+				<div class="text-center">
+					© 2020 PVLSE - All rights reserved
+				</div>
+				<a data-toggle="modal" data-target="#modalPrivacy" class="link">Privacy Policy</a>
+				<a data-toggle="modal" data-target="#termsModal" class="link">Community Guidelines</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="logout-part">
+	<div class="box">
+		<div class="close">×</div>
+		<div class="txt">Are you sure you want to quit?</div>
+		<div class="btns">
+			<button class="cancel-logout btn">CANCEL</button>
+			<button class="do-logout btn">LOG OUT</button>
+		</div>
+	</div>	
+</div>
+<div class="receive-msg">
+	<div class="title-bar"><span>Message</span><span class="close">×</span></div>
+	<div class="row">
+		<div class="col-3">
+			<div class="avarta">
+				<img src="img/users/user2.png">
+			</div>
+		</div>
+		<div class="col-6">
+			<p class="name">James</p>
+			<p class="comment">Acroyoga lesson with advanced...</p>
+		</div>
+		<div class="col-3">
+			<button class="reply">REPLY</button>
+		</div>
+	</div>
+</div>
+<div class="new-msg" id="new-msg">
+	<div class="title-bar">
+		<span class="blank">New message</span>
+		<span class="close">×</span>
+		<span class="mini">_</span>
+		<span class="max">□</span>
+	</div>
+	<div class="content">
+		<form>
+			<div class="item">
+				<span>To</span>
+				<input type="text" name="msg_to" />
+			</div>
+			<div class="item">
+				<span>Subject</span>
+				<input type="text" name="msg_subject" />
+			</div>
+			<div class="msg-area">
+				<textarea class="msg-body" rows="5" name="msg-body"></textarea>
+			</div>
+			<div class="action">
+				<button class="send-btn">SEND</button>
+				<span class="del"><img src="img/del.png"></span>
+			</div>
+		</form>		
+	</div>
+</div>
+
+<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="js/vendor/jquery-3.3.1.min.js"></script>
+<script src="js/vendor/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vendor/ScrollMagic.min.js"></script>
+<script type="text/javascript" src="js/vendor/moment.min.js"></script>
+<script type="text/javascript" src="js/vendor/jquery-ui.js"></script>
+
+<script src="js/vendor/highstock.js"></script>
+<script>
+	$(function () {
+		$( "#datepicker" ).datepicker();
+	});
+
+	Highcharts.theme = {
+		width:'100%',
+		colors: ['#5E60FF', '#e30cff', '#2b2b30', '#54545d'],
+		chart: {
+			backgroundColor: null,
+			style: {
+				fontFamily: 'Nunito, sans-serif'
+			}
+		},
+		tooltip: {
+			borderWidth: 0
+		},
+		legend: {
+			itemStyle: {
+				fontWeight: 'normal',
+				fontSize: '13px'
+			}
+		},
+		xAxis: {
+			labels: {
+				style: {
+					color: '#4c628c'
+				}
+			}
+		},
+		yAxis: {
+			labels: {
+				style: {
+					color: '#4c628c'
+				}
+			}
+		},
+		plotOptions: {
+			series: {
+				shadow: true
+			},
+			candlestick: {
+				lineColor: '#4c628c'
+			},
+			map: {
+				shadow: false
+			}
+		},
+		// Highstock specific
+		navigator: {
+			enabled: false,  // bottom additional graph
+			xAxis: {
+				gridLineColor: '#D0D0D8'
+			}
+		},
+		rangeSelector: {
+			buttonTheme: {
+				fill: 'white',
+				stroke: '#C0C0C8',
+				'stroke-width': 1,
+				states: {
+					select: {
+						fill: '#f9faff'
+					}
+				}
+			}
+		},
+		scrollbar: {
+			trackBorderColor: '#C0C0C8'
+		},
+		// General
+		background2: '#E0E0E8'
+	};
+
+	// Apply the theme
+	Highcharts.setOptions(Highcharts.theme);
+
+	/*chart transactions*/
+	var seriesOptions = [],
+		seriesCounter = 0,
+		names = ['transactions'];
+
+	var chart_height = $(".col-walett.col-dashboard-top .card-dashboard-top").outerHeight();
+		
+	function createChart() {
+		Highcharts.stockChart('chart1', {
+			chart: {
+				height: chart_height
+			},
+			title: {
+				text: ''
+			},
+			subtitle: false,
+			yAxis: {
+				labels: {
+					formatter: function () {
+						return (this.value > 0 ? ' + ' : '') + this.value + '%';
+					}
+				},
+				plotLines: [{
+					value: 0,
+					width: 1,
+					color: '#f9faff'/*horizontal line*/
+				}]
+			},
+			plotOptions: {
+				series: {
+					compare: 'percent',
+					showInNavigator: true
+				}
+			},
+			navigator: {
+				outlineColor: '#d2d2fa',
+				outlineWidth: 1,
+				maskFill: 'rgba(255, 255, 255, 0.7)'
+			},
+			tooltip: {
+				pointFormat: '<span style="color:{series.color}">Revenue</span>: <b>{point.y}</b> ({point.change}%)<br/>',
+				valueDecimals: 2,
+				split: true
+			},
+			scrollbar: {
+				barBackgroundColor: '#d2d2fa',
+				barHeight: 3,
+				barBorderRadius: 2,
+				barBorderWidth: 0,
+				buttonBackgroundColor: 'transparent',
+				buttonBorderWidth: 0,
+				buttonBorderRadius: 2,
+				trackBackgroundColor: 'none',
+				trackBorderWidth: 1,
+				trackBorderRadius: 3,
+				trackBorderColor: '#d2d2fa'
+			},
+			credits: {
+				enabled: false
+			},
+			legend: {
+				enabled: true,
+				align: 'right',
+				verticalAlign: 'top',
+				y: 50,
+				x: -60,
+				layout: 'vertical',
+				floating: true,
+				itemStyle: {
+					fontSize: '10px',
+					color: '#51516b'
+				}
+			},
+			series: seriesOptions
+		});
+		// apply the date pickers
+		setTimeout(function (){
+			$('input.highcharts-range-selector').datepicker();
+		}, 0);
+		// Set the datepicker's date format
+		$.datepicker.setDefaults({
+			dateFormat: 'yy-mm-dd',
+			onSelect: function (dateText) {
+				this.onchange();
+				this.onblur();
+				var inputs = $('input.highcharts-range-selector'),
+				from1 = inputs[0].value, //first picker
+				to1 = inputs[1].value; //second picker
+			}
+		});
+	}
+
+	//  resize window event --- responsive
+
+	$(window).on('resize', function(){
+		chart_height = $(".col-walett.col-dashboard-top .card-dashboard-top").outerHeight();
+		Highcharts.stockChart('chart1', {
+			chart: {
+				height: chart_height
+			},
+			title: {
+				text: ''
+			},
+			subtitle: false,
+			yAxis: {
+				labels: {
+					formatter: function () {
+						return (this.value > 0 ? ' + ' : '') + this.value + '%';
+					}
+				},
+				plotLines: [{
+					value: 0,
+					width: 1,
+					color: '#f9faff'  /*horizontal line*/
+				}]
+			},
+			plotOptions: {
+				series: {
+					compare: 'percent',
+					showInNavigator: true
+				}
+			},
+			navigator: {
+				outlineColor: '#d2d2fa',
+				outlineWidth: 1,
+				maskFill: 'rgba(255, 255, 255, 0.7)'
+			},
+			tooltip: {
+				pointFormat: '<span style="color:{series.color}">Revenue</span>: <b>{point.y}</b> ({point.change}%)<br/>',
+				valueDecimals: 2,
+				split: true
+			},
+			scrollbar: {
+				barBackgroundColor: '#d2d2fa',
+				barHeight: 3,
+				barBorderRadius: 2,
+				barBorderWidth: 0,
+				buttonBackgroundColor: 'transparent',
+				buttonBorderWidth: 0,
+				buttonBorderRadius: 2,
+				trackBackgroundColor: 'none',
+				trackBorderWidth: 1,
+				trackBorderRadius: 3,
+				trackBorderColor: '#d2d2fa'
+			},
+			credits: {
+				enabled: false
+			},
+			legend: {
+				enabled: true,
+				align: 'right',
+				verticalAlign: 'top',
+				y: 50,
+				x: -60,
+				layout: 'vertical',
+				floating: true,
+				itemStyle: {
+					fontSize: '10px',
+					color: '#51516b'
+				}
+			},
+			series: seriesOptions
+		});
+	});
+
+	$.each(names, function (i, name) {
+		//$("#loading").hide();
+		//$.getJSON('./json/' + name.toLowerCase() + '.json', function (data) {
+		seriesOptions[i] = {
+			name: name,
+			data: [
+				[
+					1568114412000,
+					150
+				],
+				[
+					1575980412000,
+					30
+				],
+				[
+					1578658812000,
+					30
+				],
+				[
+					1581337212000,
+					10
+				],
+				[
+					1581423612000,
+					1200
+				],
+				[
+					1583431547000,
+					160
+				],
+				[
+					1583431537000,
+					200
+				],
+				[
+					1583422548000,
+					100
+				],
+				[
+					1583435549000,
+					300
+				],
+				[
+					1583435551000,
+					100
+				],
+				[
+					1583437552000,
+					300
+				],
+				[
+					1541759539000,
+					220
+				],
+				[
+					1541759539000,
+					100
+				],
+				[
+					1541759539000,
+					300
+				],
+				[
+					1541759539000,
+					300
+				],
+				[
+					1541759539000,
+					100
+				],
+				[
+					1541759539000,
+					200
+				],
+				[
+					1541866810000,
+					200
+				],
+				[
+					1542026568000,
+					200
+				],
+				[
+					1542752450000,
+					100
+				],
+				[
+					1542791864000,
+					100
+				],
+				[
+					1543334429000,
+					100
+				],
+				[
+					1543406385000,
+					200
+				],
+				[
+					1543580451000,
+					100
+				],
+				[
+					1543695463000,
+					300
+				],
+				[
+					1543782119000,
+					80
+				],
+				[
+					1543860309000,
+					70
+				],
+				[
+					1543959565000,
+					300
+				],
+				[
+					1543978818000,
+					130
+				],
+				[
+					1583821212000,
+					150
+				],
+				[
+					1583832012000,
+					120
+				],
+				[
+					1583835612000,
+					100
+				],
+				[
+					1583839212000,
+					30
+				],
+				[
+					1583842812000,
+					100
+				]
+			],
+			type: 'area',
+			threshold: null,
+			tooltip: {
+				valueDecimals: 2
+			},
+			marker: {
+				lineWidth: 1,
+				symbol: 'circle'
+			},
+			fillColor: {
+				linearGradient: {x1: 0, y1: 0, x2: 0, y2: 1},
+				stops: [
+					[0, Highcharts.getOptions().colors[i]],
+					[1, Highcharts.Color(Highcharts.getOptions().colors[i]).setOpacity(0).get('rgba')]
+				]
+			},
+			dataGrouping: {
+				forced: true,
+				approximation: 'sum',
+				units: [
+					[
+						'day', [1]
+					]
+				]
+			},
+		};
+		seriesCounter += 1;
+		if (seriesCounter === names.length) {
+			createChart();
+		}
+	});
+
+</script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

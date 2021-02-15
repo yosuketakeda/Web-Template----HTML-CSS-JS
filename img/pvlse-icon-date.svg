@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="17px" viewBox="0 0 14 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_calendar</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="details-page-joined" transform="translate(-935.000000, -436.000000)" stroke="#5E60FF" stroke-width="1.36842105">
+            <g id="Group-3" transform="translate(-1.000000, 0.000000)">
+                <g id="s1" transform="translate(121.000000, 279.000000)">
+                    <g id="details" transform="translate(815.000000, 120.000000)">
+                        <g id="line-det-copy" transform="translate(1.000000, 38.000000)">
+                            <g id="ic_calendar">
+                                <rect id="Rectangle-88" x="0" y="2.95518207" width="11.7088585" height="11.9365928" rx="2.28070175"></rect>
+                                <path d="M0.65049214,6.00564468 L11.0583664,6.00564468" id="Line"></path>
+                                <path d="M8.45639782,10.7429335 L9.23698839,10.7429335" id="Line"></path>
+                                <path d="M2.99226384,1.72417452 L2.99226384,0.132628809" id="Line"></path>
+                                <path d="M8.71659468,1.72417452 L8.71659468,0.132628809" id="Line"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

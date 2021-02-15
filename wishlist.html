@@ -1,0 +1,825 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>PVLSE | Wishlist</title>
+	<meta name="description" content="PVLSE - Wishlist">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Place favicon.ico in the root directory -->
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+	<link rel="icon" href="favicon.png" type="image/x-icon"/>
+
+	<link rel="stylesheet" href="sass/jquery-ui.min.css">
+	<link rel="stylesheet" href="sass/all-fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="js/vendor/daterangepicker.css" />
+	<link rel="stylesheet" type="text/css" href="js/vendor/ion.rangeSlider.css" />
+	<link rel="stylesheet" href="sass/screen.css">
+</head>
+
+<body class="page wishlist">
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+	your browser</a> to improve your experience and security.</p>
+<![endif]-->
+<header>
+	<nav>
+		<div class="container container-top">
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title>
+						<path stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+				</span>
+			</button>
+			<a href="index.html" class="logo">
+				<img src="img/logo.svg" alt=""/>
+			</a>
+			<div class="navbar row" id="navbar">
+				<div class="col-12 col-sm-12 col-md-8 col-lg-8 nav-menu-left">
+					<span>
+						<span class="nav-link nav-link-install-text">Install app</span>
+						<a href="https://apps.apple.com/us/app/pvlse/id1409396043" class="nav-link nav-icon apple"></a>
+						<a href="https://play.google.com/store/apps/details?id=com.thepvlse.app&hl=en" class="nav-link nav-icon google-play"></a>
+					</span>
+				</div>
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 nav-menu-right">
+					<a href="create-pvlse.html" class="nav-link nav-create">+CREATE</a>
+					<a href="wishlist.html" class="nav-link nav-icon wishlist"></a>
+					<a href="#" class="nav-link nav-icon inbox"></a>
+					<div class="dropdown dropdown-account">
+						<a href="#" class="nav-link nav-account selected" data-toggle="dropdown" aria-expanded="false">
+							<img src="img/users/user1.png" alt="" class="nav-avatar"/>
+						</a>
+						<div class="dropdown-menu dropdown-toggle-admin" id="dropdown-toggle-admin">
+							<a href="my-profile.html" class="dropdown-nav-link">
+								My profile
+							</a>
+							<a href="dashboard.html" class="dropdown-nav-link">
+								Dashboard
+							</a>
+							<a href="wallet.html" class="dropdown-nav-link">
+								Wallet
+							</a>
+							<a href="payments.html" class="dropdown-nav-link">
+								Payments & Cashout
+							</a>
+							<a href="joined-pvlses.html" class="dropdown-nav-link">
+								Joined pvlses <span>(9 upcoming)</span>
+							</a>
+							<a href="created-pvlses.html" class="dropdown-nav-link">
+								Created pvlses <span>(12 upcoming)</span>
+							</a>
+							<!--<a href="index.html" class="dropdown-nav-link">
+								Log Out
+							</a>-->
+							<button class="logout-btn">Log Out</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>
+<section class="section section-pvlses">
+	<div class="container">
+		<div class="section-wrap-titles">
+			<div class="breadcrumb-pvlses">
+				<a href="index.html" class="breadcrumb-item">
+					My account
+				</a>
+				<div class="breadcrumb-sep">/</div>
+				<div>Wishlist</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-7 col-lg-7">
+					<h1 class="section-title section-title-main">Wishlist</h1>
+					<h2 class="section-title">This week</h2>
+				</div>
+				<div class="col-12 col-md-5 col-lg-5 events">
+					<div class="sub-title">Get notified for these events</div>
+					<div>When do you want to be notified about these events?</div>
+					<div class="checkgroup row">
+						<div class="col-4">
+							<div class="custom-control custom-checkbox">
+								<input type="radio" class="custom-control-input check-online" id="1-day" name="payment-type">
+								<label class="custom-control-label" for="1-day">1 day before</label>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="custom-control custom-checkbox">
+								<input type="radio" class="custom-control-input check-online" id="1-week" name="payment-type">
+								<label class="custom-control-label" for="1-week">1 week before</label>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="custom-control custom-checkbox">
+								<input type="radio" class="custom-control-input check-online" id="2-weeks" name="payment-type">
+								<label class="custom-control-label" for="2-weeks">2 weeks before</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+		<div class="row row-pvlses joined-pvlses">			
+			<div class="col-12 col-md-3">
+				<div class="card-pvlse">
+					<div class="wrap-img">
+						<a href="details-page.html">
+							<img src="img/landingpage/popular2.jpg" alt="" />
+						</a>
+						<div class="price-tag price-tag-coin">
+							<p>£ 45</p>
+						</div>						
+					</div>
+					<div class="wrap-details">
+						<div class="comment">
+							Yoga workout on the beach with group
+						</div>
+						<div class="author">Created by Don Norman</div>	
+						<div class="star-part">
+							<div class="stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+							</div>
+						</div>
+						<div class="row-details top-details">
+							<div class="location">
+								<span class="icons">
+									<i class="fas fa-map-marker-alt"></i>
+								</span>
+								London, UK
+							</div>
+							<div class="top-details-right">86 reviews</div>
+						</div>
+						<div class="row-details top-details">
+							<div class="date">
+								<span class="icons">
+									<i class="fas fa-calendar-alt"></i>
+								</span>
+								4 february 2020
+							</div>
+							<div class="top-details-right"><span class="strong">18/20</span> joined</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-3">
+				<div class="card-pvlse">
+					<div class="wrap-img">
+						<a href="details-page.html">
+							<img src="img/landingpage/popular2.jpg" alt="" />
+						</a>
+						<div class="price-tag price-tag-coin">
+							<p>£ 45</p>
+						</div>						
+					</div>
+					<div class="wrap-details">
+						<div class="comment">
+							Yoga workout on the beach with group
+						</div>
+						<div class="author">Created by Don Norman</div>	
+						<div class="star-part">
+							<div class="stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+							</div>
+						</div>
+						<div class="row-details top-details">
+							<div class="location">
+								<span class="icons">
+									<i class="fas fa-map-marker-alt"></i>
+								</span>
+								London, UK
+							</div>
+							<div class="top-details-right">86 reviews</div>
+						</div>
+						<div class="row-details top-details">
+							<div class="date">
+								<span class="icons">
+									<i class="fas fa-calendar-alt"></i>
+								</span>
+								4 february 2020
+							</div>
+							<div class="top-details-right"><span class="strong">18/20</span> joined</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-3">
+				<div class="card-pvlse">
+					<div class="wrap-img">
+						<a href="details-page.html">
+							<img src="img/landingpage/popular2.jpg" alt="" />
+						</a>
+						<div class="price-tag price-tag-coin">
+							<p>£ 45</p>
+						</div>						
+					</div>
+					<div class="wrap-details">
+						<div class="comment">
+							Yoga workout on the beach with group
+						</div>
+						<div class="author">Created by Don Norman</div>	
+						<div class="star-part">
+							<div class="stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+							</div>
+						</div>
+						<div class="row-details top-details">
+							<div class="location">
+								<span class="icons">
+									<i class="fas fa-map-marker-alt"></i>
+								</span>
+								London, UK
+							</div>
+							<div class="top-details-right">86 reviews</div>
+						</div>
+						<div class="row-details top-details">
+							<div class="date">
+								<span class="icons">
+									<i class="fas fa-calendar-alt"></i>
+								</span>
+								4 february 2020
+							</div>
+							<div class="top-details-right"><span class="strong">18/20</span> joined</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-3">
+				<div class="card-pvlse">
+					<div class="wrap-img">
+						<a href="details-page.html">
+							<img src="img/landingpage/popular2.jpg" alt="" />
+						</a>
+						<div class="price-tag price-tag-coin">
+							<p>£ 45</p>
+						</div>						
+					</div>
+					<div class="wrap-details">
+						<div class="comment">
+							Yoga workout on the beach with group
+						</div>
+						<div class="author">Created by Don Norman</div>	
+						<div class="star-part">
+							<div class="stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+							</div>
+						</div>
+						<div class="row-details top-details">
+							<div class="location">
+								<span class="icons">
+									<i class="fas fa-map-marker-alt"></i>
+								</span>
+								London, UK
+							</div>
+							<div class="top-details-right">86 reviews</div>
+						</div>
+						<div class="row-details top-details">
+							<div class="date">
+								<span class="icons">
+									<i class="fas fa-calendar-alt"></i>
+								</span>
+								4 february 2020
+							</div>
+							<div class="top-details-right"><span class="strong">18/20</span> joined</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+</section>
+<section class="section section-pvlses filtres joined-pvlses">
+	<div class="container"> 		
+		<div class="row row-pvlses">
+			<div class="col-12">
+				<div class="row">
+					<h2 class="section-title">Your saved pvlses</h2>					
+				</div>
+			</div>	
+		</div>    
+		<div class="row row-pvlses">
+			<div class="items">
+				<div class="bit before">
+					<div class="sel-custom spec-select location">
+						<img src="img/location-icon.png" />
+						<select class="form-control custom-select">
+							<option value="0">London</option>
+							<option value="1">Manchester</option>
+							<option value="2">Bristol</option>
+							<option value="3">Birginham</option>
+							<option value="4">Liverpool</option>
+						</select>
+					</div>                                    
+					<div class="sel-custom spec-select category">
+						<img src="img/category.png" />
+						<select class="form-control custom-select">
+							<option value="0">Category</option>
+							<option value="1">Fitness</option>
+							<option value="2">Running</option>
+							<option value="3">Crossfit</option>
+							<option value="4">Yoga</option>
+						</select>
+					</div>                    
+				</div>
+				<div class="bit after">
+					<div class="sel-custom date-time">
+						<img class="calendar-icon" src="img/calendar-icon.png" />
+						<input class="in-daterange" type="text" name="daterange" value="02 Feb - 03 Mar" />
+					</div>                                    
+					<div class="price-rect">
+						<a href="#" class="form-control wrap-price" data-toggle="dropdown" aria-expanded="false">
+							<span>$</span>
+							<input type="text" class="js-input-from"/>
+							<span class="between">-</span>
+							<span>$</span>
+							<input type="text" class="js-input-to"/>
+						</a>
+						<div class="dropdown-menu dropdown-price" id="dropdown-price">
+							<div class="range-slider">
+								<input type="text" class="js-range-slider" value="" />
+							</div>
+							<div class="row extra-controls">
+								<div class="col-6">
+									<p>
+										Minimum:
+									</p>
+									<p>
+										<span class="span-input-from"></span>
+									</p>
+								</div>
+								<div class="col-6">
+									<p>
+										Maximum:
+									</p>
+									<p>
+										<span class="span-input-to"></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>                    
+				</div>
+			</div>  
+		</div>  
+		<div class="row row-pvlses">
+			<div class="col-12 col-md-3">
+				<div class="card-pvlse">
+					<div class="wrap-img">
+						<a href="details-page.html">
+							<img src="img/landingpage/popular2.jpg" alt="" />
+						</a>
+						<div class="price-tag price-tag-coin">
+							<p>£ 45</p>
+						</div>						
+					</div>
+					<div class="wrap-details">
+						<div class="comment">
+							Yoga workout on the beach with group
+						</div>
+						<div class="author">Created by Don Norman</div>	
+						<div class="star-part">
+							<div class="stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+							</div>
+						</div>
+						<div class="row-details top-details">
+							<div class="location">
+								<span class="icons">
+									<i class="fas fa-map-marker-alt"></i>
+								</span>
+								London, UK
+							</div>
+							<div class="top-details-right">86 reviews</div>
+						</div>
+						<div class="row-details top-details">
+							<div class="date">
+								<span class="icons">
+									<i class="fas fa-calendar-alt"></i>
+								</span>
+								4 february 2020
+							</div>
+							<div class="top-details-right"><span class="strong">18/20</span> joined</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-3">
+				<div class="card-pvlse">
+					<div class="wrap-img">
+						<a href="details-page.html">
+							<img src="img/landingpage/popular2.jpg" alt="" />
+						</a>
+						<div class="price-tag price-tag-coin">
+							<p>£ 45</p>
+						</div>						
+					</div>
+					<div class="wrap-details">
+						<div class="comment">
+							Yoga workout on the beach with group
+						</div>
+						<div class="author">Created by Don Norman</div>	
+						<div class="star-part">
+							<div class="stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+							</div>
+						</div>
+						<div class="row-details top-details">
+							<div class="location">
+								<span class="icons">
+									<i class="fas fa-map-marker-alt"></i>
+								</span>
+								London, UK
+							</div>
+							<div class="top-details-right">86 reviews</div>
+						</div>
+						<div class="row-details top-details">
+							<div class="date">
+								<span class="icons">
+									<i class="fas fa-calendar-alt"></i>
+								</span>
+								4 february 2020
+							</div>
+							<div class="top-details-right"><span class="strong">18/20</span> joined</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+			<div class="col-12 col-md-3">
+				<div class="card-pvlse">
+					<div class="wrap-img">
+						<a href="details-page.html">
+							<img src="img/landingpage/popular2.jpg" alt="" />
+						</a>
+						<div class="price-tag price-tag-coin">
+							<p>£ 45</p>
+						</div>						
+					</div>
+					<div class="wrap-details">
+						<div class="comment">
+							Yoga workout on the beach with group
+						</div>
+						<div class="author">Created by Don Norman</div>	
+						<div class="star-part">
+							<div class="stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+							</div>
+						</div>
+						<div class="row-details top-details">
+							<div class="location">
+								<span class="icons">
+									<i class="fas fa-map-marker-alt"></i>
+								</span>
+								London, UK
+							</div>
+							<div class="top-details-right">86 reviews</div>
+						</div>
+						<div class="row-details top-details">
+							<div class="date">
+								<span class="icons">
+									<i class="fas fa-calendar-alt"></i>
+								</span>
+								4 february 2020
+							</div>
+							<div class="top-details-right"><span class="strong">18/20</span> joined</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-3">
+				<div class="card-pvlse">
+					<div class="wrap-img">
+						<a href="details-page.html">
+							<img src="img/landingpage/popular2.jpg" alt="" />
+						</a>
+						<div class="price-tag price-tag-coin">
+							<p>£ 45</p>
+						</div>						
+					</div>
+					<div class="wrap-details">
+						<div class="comment">
+							Yoga workout on the beach with group
+						</div>
+						<div class="author">Created by Don Norman</div>	
+						<div class="star-part">
+							<div class="stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+							</div>
+						</div>
+						<div class="row-details top-details">
+							<div class="location">
+								<span class="icons">
+									<i class="fas fa-map-marker-alt"></i>
+								</span>
+								London, UK
+							</div>
+							<div class="top-details-right">86 reviews</div>
+						</div>
+						<div class="row-details top-details">
+							<div class="date">
+								<span class="icons">
+									<i class="fas fa-calendar-alt"></i>
+								</span>
+								4 february 2020
+							</div>
+							<div class="top-details-right"><span class="strong">18/20</span> joined</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>                   		
+	</div>
+</section>
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 footer-links">
+				<div class="text-center">
+					© 2020 PVLSE - All rights reserved
+				</div>
+				<a data-toggle="modal" data-target="#modalPrivacy" class="link">Privacy Policy</a>
+				<a data-toggle="modal" data-target="#termsModal" class="link">Community Guidelines</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="logout-part">
+	<div class="box">
+		<div class="close">×</div>
+		<div class="txt">Are you sure you want to quit?</div>
+		<div class="btns">
+			<button class="cancel-logout btn">CANCEL</button>
+			<button class="do-logout btn">LOG OUT</button>
+		</div>
+	</div>	
+</div>
+<div class="receive-msg">
+	<div class="title-bar"><span>Message</span><span class="close">×</span></div>
+	<div class="row">
+		<div class="col-3">
+			<div class="avarta">
+				<img src="img/users/user2.png">
+			</div>
+		</div>
+		<div class="col-6">
+			<p class="name">James</p>
+			<p class="comment">Acroyoga lesson with advanced...</p>
+		</div>
+		<div class="col-3">
+			<button class="reply">REPLY</button>
+		</div>
+	</div>
+</div>
+<div class="new-msg" id="new-msg">
+	<div class="title-bar">
+		<span class="blank">New message</span>
+		<span class="close">×</span>
+		<span class="mini">_</span>
+		<span class="max">□</span>
+	</div>
+	<div class="content">
+		<form>
+			<div class="item">
+				<span>To</span>
+				<input type="text" name="msg_to" />
+			</div>
+			<div class="item">
+				<span>Subject</span>
+				<input type="text" name="msg_subject" />
+			</div>
+			<div class="msg-area">
+				<textarea class="msg-body" rows="5" name="msg-body"></textarea>
+			</div>
+			<div class="action">
+				<button class="send-btn">SEND</button>
+				<span class="del"><img src="img/del.png"></span>
+			</div>
+		</form>		
+	</div>
+</div>
+<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="js/vendor/jquery-3.3.1.min.js"></script>
+<script src="js/vendor/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vendor/ScrollMagic.min.js"></script>
+<script type="text/javascript" src="js/vendor/moment.min.js"></script>
+<script type="text/javascript" src="js/vendor/daterangepicker.min.js"></script>
+
+<script type="text/javascript" src="js/vendor/ion.rangeSlider.js"></script>
+<script>
+    var x, i, j, selElmnt, a, b, c;
+    /*look for any elements with the class "custom-select":*/
+    x = document.getElementsByClassName("spec-select");
+    for (i = 0; i < x.length; i++) {
+        selElmnt = x[i].getElementsByTagName("select")[0];
+        /*for each element, create a new DIV that will act as the selected item:*/
+        a = document.createElement("DIV");
+        a.setAttribute("class", "select-selected");
+        a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+        x[i].appendChild(a);
+        /*for each element, create a new DIV that will contain the option list:*/
+        b = document.createElement("DIV");
+        b.setAttribute("class", "select-items select-hide");
+        for (j = 0; j < selElmnt.length; j++) {
+            /*for each option in the original select element,
+            create a new DIV that will act as an option item:*/
+            c = document.createElement("DIV");
+            c.innerHTML = selElmnt.options[j].innerHTML;
+            c.addEventListener("click", function(e) {
+                /*when an item is clicked, update the original select box,
+                and the selected item:*/
+                var y, i, k, s, h;
+                s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                h = this.parentNode.previousSibling;
+                for (i = 0; i < s.length; i++) {
+                if (s.options[i].innerHTML == this.innerHTML) {
+                    s.selectedIndex = i;
+                    h.innerHTML = this.innerHTML;
+                    y = this.parentNode.getElementsByClassName("same-as-selected");
+                    for (k = 0; k < y.length; k++) {
+                    y[k].removeAttribute("class");
+                    }
+                    this.setAttribute("class", "same-as-selected");
+                    break;
+                }
+                }
+                h.click();
+            });
+            b.appendChild(c);
+        }
+        x[i].appendChild(b);
+        a.addEventListener("click", function(e) {
+            /*when the select box is clicked, close any other select boxes,
+            and open/close the current select box:*/
+            e.stopPropagation();
+            closeAllSelect(this);
+            this.nextSibling.classList.toggle("select-hide");
+            this.classList.toggle("select-arrow-active");
+            // change the width of selected div
+            changeSelectWidth();
+        });
+    }
+    function changeSelectWidth(){
+        var width1 = $(".bit .location").outerWidth();
+        $(".category").css("margin-left", width1 + 10);
+        var width2 = $(".category").outerWidth();
+        $(".bit.after").css("margin-left", width1 + width2 + 20);
+    }
+    function closeAllSelect(elmnt) {
+        /*a function that will close all select boxes in the document,
+        except the current select box:*/
+        var x, y, i, arrNo = [];
+        x = document.getElementsByClassName("select-items");
+        y = document.getElementsByClassName("select-selected");
+        for (i = 0; i < y.length; i++) {
+            if (elmnt == y[i]) {
+            arrNo.push(i)
+            } else {
+            y[i].classList.remove("select-arrow-active");
+            }
+        }
+        for (i = 0; i < x.length; i++) {
+            if (arrNo.indexOf(i)) {
+            x[i].classList.add("select-hide");
+            }
+		}
+		changeSelectWidth();
+    }
+    /*if the user clicks anywhere outside the select box,
+    then close all select boxes:*/
+    document.addEventListener("click", closeAllSelect);
+</script>
+<script type="text/javascript">
+	$(function () {    
+        // set margin left of select in loading
+        var width1 = $(".bit .location").outerWidth();
+        $(".category").css("margin-left", width1 + 10);  
+        var width2 = $(".category").outerWidth();
+        $(".bit.after").css("margin-left", width1 + width2 + 20);  
+        // pickup date range 
+		$('input[name="daterange"]').daterangepicker({
+            locale: {
+                format: 'DD MMM '
+            }
+        });
+        var $range = $(".js-range-slider"),
+                $inputFrom = $(".js-input-from"),
+                $inputTo = $(".js-input-to"),
+                $spanFrom = $(".span-input-from"),
+                $spanTo = $(".span-input-to"),
+                instance,
+                min = 0,
+                max = 1000,
+                from = 0,
+                to = 0;
+
+        $range.ionRangeSlider({
+            skin: "round",
+            type: "double",
+            min: min,
+            max: max,
+            from: 0,
+            to: 500,
+            onStart: updateInputs,
+            onChange: updateInputs
+        });
+        instance = $range.data("ionRangeSlider");
+
+        function updateInputs (data) {
+            from = data.from;
+            to = data.to;            
+            $inputFrom.prop("value", from);
+            $inputTo.prop("value", to);            
+            $spanFrom.html(from);
+            $spanTo.html(to);
+            resizeFrom();
+            resizeTo();
+        }
+
+        $inputFrom.on("input", function () {
+            var val = $(this).prop("value");
+
+            // validate
+            if (val < min) {
+                val = min;
+            } else if (val > to) {
+                val = to;
+            }
+            instance.update({
+                from: val
+            });
+        });
+
+        $inputTo.on("input", function () {
+            var val = $(this).prop("value");
+            // validate
+            if (val < from) {
+                val = from;
+            } else if (val > max) {
+                val = max;
+            }
+            instance.update({
+                to: val
+            });
+        });
+        // data range width
+        var from_width = ($(".js-input-from").val()).length;
+        $('.js-input-from').css("width", from_width*10+5);
+        var to_width = ($(".js-input-to").val()).length;
+        $('.js-input-to').css("width", to_width*10+5);
+
+        function resizeFrom() {
+            var from_width = ($(".js-input-from").val()).length;
+            $('.js-input-from').css("width", from_width*10+5);   
+        }
+        function resizeTo() {
+            var to_width = ($(".js-input-to").val()).length;
+            $('.js-input-to').css("width", to_width*10+5);
+        }
+        function resizeInput(){
+            var width = ($(this).val()).length;
+            $(this).css("width", width*10+5);
+        }
+        $('.js-input-from').keyup(resizeInput).each(resizeInput);
+        $('.js-input-to').keyup(resizeInput).each(resizeInput);
+
+	});		
+</script>
+<script src="js/main.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,1156 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>PVLSE | Details page</title>
+	<meta name="description" content="PVLSE - Details page">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Place favicon.ico in the root directory -->
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+	<link rel="icon" href="favicon.png" type="image/x-icon"/>
+	<link rel="stylesheet" href="sass/all-fontawesome.min.css">
+	<link rel="stylesheet" href="sass/screen.css">
+	<link rel="stylesheet" href="sass/jquery-ui.min.css">
+	
+</head>
+
+<body class="page pvlse">
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+	your browser</a> to improve your experience and security.</p>
+<![endif]-->
+<header>
+	<nav>
+		<div class="container container-top">
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title>
+						<path stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+				</span>
+			</button>
+			<a href="index.html" class="logo">
+				<img src="img/logo.svg" alt=""/>
+			</a>
+			<div class="navbar row" id="navbar">
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6 nav-menu-left">
+					<span>
+						<span class="nav-link nav-link-install-text">Install app</span>
+						<a href="https://apps.apple.com/us/app/pvlse/id1409396043" class="nav-link nav-icon apple"></a>
+						<a href="https://play.google.com/store/apps/details?id=com.thepvlse.app&hl=en" class="nav-link nav-icon google-play"></a>
+					</span>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6 nav-menu-right">
+					<a href="create-pvlse.html" class="nav-link nav-create">+CREATE</a>
+					<a href="wishlist.html" class="nav-link nav-icon wishlist"></a>
+					<a href="#" class="nav-link nav-icon inbox"></a>
+					<a data-toggle="modal" data-target="#loginModal" href="#" class="nav-link nav-login">Login</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>
+<section class="section section-search">
+	<div class="container">
+		<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+			<div class="row wrap-search">
+				<div class="col-12 col-sm-9 col-md-9 col-lg-9 wrap-search-input">
+					<input id="search" type="search" class="form-control search" placeholder="London - Yoga classes" />
+					<i class="search-icon"></i>
+				</div>
+				<div class="col-12 col-sm-3 col-md-3 col-lg-3">
+					<button class="btn btn-primary">Search</button>
+				</div>
+			</div>
+		</div>	
+	</div>
+</section>
+<section class="section section-details-top">
+	<div class="container">
+		<div class="row">			
+			<div class="col-12 col-sm-12 col-md-12 col-lg-6">				
+				<div class="breadcrumb-pvlses">
+					<a href="index.html" class="breadcrumb-item">
+						Home
+					</a>
+					<div class="breadcrumb-sep">/</div>
+					<div>Yoga</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-4 wrap-carousel">
+						<div class="carousel vert slide" data-ride="carousel" id="carousel-sec-img">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<div class="wrap-sec-img">
+										<a data-toggle="modal" data-target="#photosModal" href="#">
+											<img src="img/detailpage/test1.jpg" alt="" />
+										</a>
+									</div>
+									<div class="wrap-sec-img">
+										<a data-toggle="modal" data-target="#photosModal" href="#">
+											<img src="img/detailpage/test2.jpg" alt="" />
+										</a>
+									</div>
+								</div>	
+								<div class="carousel-item">
+									<div class="wrap-sec-img">
+										<a data-toggle="modal" data-target="#photosModal" href="#">
+											<img src="img/detailpage/test1.jpg" alt="" />
+										</a>
+									</div>
+									<div class="wrap-sec-img">
+										<a data-toggle="modal" data-target="#photosModal" href="#">
+											<img src="img/detailpage/test2.jpg" alt="" />
+										</a>
+									</div>
+								</div>								
+							</div>						
+							<a class="carousel-control-prev" href="#carousel-sec-img" data-slide="prev">
+								<span class="carousel-control-prev-icon"><i class="fas fa-angle-up"></i></span>
+							</a>
+							<a class="carousel-control-next" href="#carousel-sec-img" data-slide="next">
+								<span class="carousel-control-next-icon"><i class="fas fa-angle-down"></i></span>
+							</a>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-8 wrap-img wrap-img-main">
+						<a data-toggle="modal" data-target="#photosModal" href="#">
+							<img src="img/detailpage/test.jpg" alt="" />
+						</a>
+					</div>
+					
+				</div>
+			</div>
+			<div class="col-12 col-sm-12 col-md-12 col-lg-6 section-details-top-right">
+				<div class="row title">
+					<div class="col-12 col-sm-12 col-md-8 col-lg-8">
+						<h2>Acroyoga lesson with advanced poses and photography</h2>
+					</div>
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="pvlse-review">
+							<div class="stars">
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+							</div>
+							<div class="pvlse-review-number">81 reviews</div>
+						</div>
+					</div>
+				</div>
+				<div class="row price-part">
+					<div class="col-12 col-sm-12 col-md-8 col-lg-8">
+						<div class="pvlse-price">
+							Price: <span>£ 45</span>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="pvlse-joined">
+							<span>18/20</span> joined
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-8 col-lg-8 pvlse-right-det">
+						<div class="pvlse-right-line-det line-duration">
+							<div class="icon-part"><img src="img/detailpage/clock.png"></div>
+							<div class="txt">Duration: <strong>1.5 hours</strong></div>
+						</div>
+						<div class="pvlse-right-line-det line-date">
+							<div class="icon-part"><img src="img/detailpage/clendar.png"></div>
+							<div>
+								<span class="txt">Date and time:</span>
+								<div class="sel-custom selector">
+									<select class="customized-select">
+										<option>14 mar, 4pm</option>
+										<option>15 mar, 6pm</option>
+										<option>16 mar, 6pm</option>
+									</select>
+								</div>								
+							</div>
+						</div>
+						<div class="pvlse-right-line-det line-hosted-by">
+							<div class="icon-part"><img src="img/detailpage/hostman.png"></div>
+							<div class="txt">Hosted by: <strong> Annie Smith</strong></div>							
+						</div>
+						<div class="pvlse-right-line-det line-location">
+							<div class="icon-part"><img src="img/detailpage/location.png"></div>
+							<div class="txt">
+								Church Lane, London, N2 8DX
+								(Exact address will be provided after booking)
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4 pvlse-right-actions">
+						<div class="share-part">
+							<a class="share-btn" href="#">SHARE</a>
+						</div>
+						<div class="oper-part">
+							<a class="edit-btn" href="#">EDIT</a>
+							<a class="cancel-btn" href="#">CANCEL</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section section-details-activity">
+	<div class="container">
+		<div class="row">
+			<h2 class="section-title">What we'll do</h2>
+			<div class="col-12 col-sm-12 col-md-6 col-lg-6">				
+				<p>First of all, if you don’t see a date or time available that will work for you and a partner let me know when would be good and I’ll try to set something up!<br />
+				We will have a short warm up and intro on acro-etiquette, then your education will begin. This will be a fun session in which we explore our capabilities in the world of AcroYoga.  We will be at a gorgeous beach cliff location and will take as many photos as you want!
+				</p>
+				<p>So this is how it goes functionally:</p>
+
+				<p><strong>All poses will be demonstrated and broken down for bases, flyers, and spotters.</strong></p>				
+			</div>
+			<div class="col-12 col-sm-12 col-md-6 col-lg-6">
+				<p>By the end of our time you will learn:</p>
+				<div class="how-part">
+					<div class="line">
+						<div class="point"><img src="img/detailpage/point.png"></div>
+						<div class="txt">how to base, fly and spot foundational postures</div>
+					</div>
+					<div class="line">
+						<div class="point"><img src="img/detailpage/point.png"></div>
+						<div class="txt">how to access stability when basing and flying through bone stacking and core engagement</div>
+					</div>
+					<div class="line">
+						<div class="point"><img src="img/detailpage/point.png"></div>
+						<div class="txt">how to spot correctly for each posture and cultivate a safe space to grow within</div>
+					</div>
+					<div class="line">
+						<div class="point"><img src="img/detailpage/point.png"></div>
+						<div class="txt">how to communicate effectively and build trust with your partners</div>
+					</div>
+					<div class="line">
+						<div class="point"><img src="img/detailpage/point.png"></div>
+						<div class="txt">how to connect learned foundational postures into a final flow</div>
+					</div>
+				</div>			
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section section-details-host">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-4 col-lg-4">
+				<img src="img/detailpage/host.jpg">
+			</div>
+			<div class="col-12 col-sm-12 col-md-8 col-lg-8">
+				<div class="host-name">Your host: <a href="profile.html">Annie Smith</a></div>
+				<div class="txt">
+					AcroYoga is so much FUN! Also it provides needed health benefits of physical activity, and human interaction, trust, and communication.
+				</div>
+				<div class="txt last">
+					I practice and teach AcroYoga everyday because I love it so much. I really enjoy the joy I see in others when they discover that this activity is possible and accessible to most people. I will teach all you aspiring AcroYogis out there how to base and fly safely.
+				</div>
+				<a href="#" class="contact-btn">CONTACT HOST</a>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section section-pvlses-categories">
+	<div class="container">
+		<div class="row row-pvlses-categories">
+			<div class="col-12">
+				<p>Guest photos:</p>
+			</div>			
+		</div>
+		<div class="carousel horizon slide" data-ride="carousel" id="carousel-cat">				
+			<a class="carousel-control-prev" href="#carousel-cat" data-slide="prev">
+				<span class="carousel-control-prev-icon"><i class="fas fa-angle-left"></i></span>
+			</a>
+			<a class="carousel-control-next" href="#carousel-cat" data-slide="next">
+				<span class="carousel-control-next-icon"><i class="fas fa-angle-right"></i></span>
+			</a>
+			<div class="carousel-inner" role="listbox">			  
+			  <div class="carousel-item active">
+				<div class="col-12 col-md-3">
+					<div class="card-pvlse-cat">
+						<div class="wrap-img-cat">
+							<a href="category.html">
+								<img src="img/landingpage/category1.jpg" alt="" />
+							</a>
+						</div>
+					</div>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<div class="col-12 col-md-3">
+					<div class="card-pvlse-cat">
+						<div class="wrap-img-cat">
+							<a href="category.html">
+								<img src="img/landingpage/category2.jpg" alt="" />
+							</a>
+						</div>
+					</div>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<div class="col-12 col-md-3">
+					<div class="card-pvlse-cat">
+						<div class="wrap-img-cat">
+							<a href="category.html">
+								<img src="img/landingpage/category3.jpg" alt="" />
+							</a>
+						</div>
+					</div>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<div class="col-12 col-md-3">
+					<div class="card-pvlse-cat">
+						<div class="wrap-img-cat">
+							<a href="category.html">
+								<img src="img/landingpage/category4.jpg" alt="" />
+							</a>
+						</div>
+					</div>
+				</div>
+			  </div>				  		  
+			</div>			  
+		</div>
+	</div>
+</section>
+<section class="section section-details-reviews">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="section-title">Guests reviews</h2>
+			</div>
+		</div>
+		<div class="row guest-reviews-top">
+			<div class="col-12 col-sm-6">
+				<div class="guest-reviews-top-row">
+					<div class="stars">
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+					</div>
+					<div class="guest-reviews-number">81 reviews</div>
+				</div>
+				<div class="guest-reviews-top-row">
+					<div class="stars">
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+					</div>
+					<div class="guest-reviews-number">16 reviews</div>
+				</div>
+				<div class="guest-reviews-top-row">
+					<div class="stars">
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+					</div>
+					<div class="guest-reviews-number">2 reviews</div>
+				</div>
+			</div>
+		</div>
+		<div class="guest-reviews">
+			<div class="row guest-review">
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4">
+					<div>
+						<a class="link-user" href="profile.html">Mackenzie</a> - <span class="date">January 2020</span>
+					</div>
+					<div class="stars">
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-8 col-lg-8 description">
+					<p>
+						Annie is a stellar instructor! I feel so lucky to have my first acro experience with she. She’s sweet and patient as can be. This was such a positive experience, I'd like to continue practicing acro for as long as I can afford to. Do yourself a favor and BOOK THIS!
+					</p>
+				</div>
+			</div>
+			<div class="seperate"></div>
+			<div class="row guest-review">
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4">
+					<div>
+						<a class="link-user" href="profile.html">Mackenzie</a> - <span class="date">January 2020</span>
+					</div>
+					<div class="stars">
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-8 col-lg-8 description">
+					<p>
+						Annie is a stellar instructor! I feel so lucky to have my first acro experience with she. She’s sweet and patient as can be. This was such a positive experience, I'd like to continue practicing acro for as long as I can afford to. Do yourself a favor and BOOK THIS!
+					</p>
+				</div>
+			</div>
+			<div class="seperate"></div>
+			<div class="row guest-review">
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4">
+					<div>
+						<a class="link-user" href="profile.html">Mackenzie</a> - <span class="date">January 2020</span>
+					</div>
+					<div class="stars">
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-8 col-lg-8 description">
+					<p>
+						Annie is a stellar instructor! I feel so lucky to have my first acro experience with she. She’s sweet and patient as can be. This was such a positive experience, I'd like to continue practicing acro for as long as I can afford to. Do yourself a favor and BOOK THIS!
+					</p>
+				</div>
+			</div>
+			<div class="seperate"></div>
+			<div class="row guest-review">
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4">
+					<div>
+						<a class="link-user" href="profile.html">Mackenzie</a> - <span class="date">January 2020</span>
+					</div>
+					<div class="stars">
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-8 col-lg-8 description">
+					<p>
+						Annie is a stellar instructor! I feel so lucky to have my first acro experience with she. She’s sweet and patient as can be. This was such a positive experience, I'd like to continue practicing acro for as long as I can afford to. Do yourself a favor and BOOK THIS!
+					</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 wrap-pagination">
+					<div aria-label="Page navigation">
+						<ul class="pagination justify-content-left">
+							<li class="page-item disabled">
+								<a class="page-link page-link-prev" href="#" tabindex="-1">Previous</a>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link page-link-active" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item">
+								<a class="page-link page-link-next" href="#">Next</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section section-pvlses">
+	<div class="container">
+		<div class="row row-pvlses">
+			<div class="col-12">
+				<h2 class="section-title shrink">More by Annie</h2>
+			</div>
+			<div class="carousel horizon slide" data-ride="carousel" id="carousel-p1">				
+				<a class="carousel-control-prev" href="#carousel-p1" data-slide="prev">
+					<span class="carousel-control-prev-icon"><i class="fas fa-angle-left"></i></span>
+				</a>
+				<a class="carousel-control-next" href="#carousel-p1" data-slide="next">
+					<span class="carousel-control-next-icon"><i class="fas fa-angle-right"></i></span>
+				</a>
+				<div class="carousel-inner" role="listbox">			  
+				  <div class="carousel-item active">
+					<div class="col-12 col-md-3">
+						<div class="card-pvlse">
+							<div class="wrap-img">
+								<a href="details-page.html">
+									<img src="img/landingpage/popular1.jpg" alt="" />
+								</a>
+								<span class="price-tag price-tag-coin">£ 45</span>
+								
+							</div>
+							<div class="wrap-details">
+								<div class="comment">
+									Yoga workout on the beach with group
+								</div>
+								<div class="author">Created by Don Norman</div>	
+								<div class="star-part">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<div class="row-details top-details">
+									<div class="location">
+										<span class="icons">
+											<i class="fas fa-map-marker-alt"></i>
+										</span>
+										London, UK
+									</div>
+									<div class="top-details-right">86 reviews</div>
+								</div>
+								<div class="row-details top-details">
+									<div class="date">
+										<span class="icons">
+											<i class="fas fa-calendar-alt"></i>
+										</span>
+										4 february 2020
+									</div>
+									<div class="top-details-right"><span class="strong">18/20</span> joined</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				  </div>
+				  <div class="carousel-item">
+					<div class="col-12 col-md-3">
+						<div class="card-pvlse">
+							<div class="wrap-img">
+								<a href="details-page.html">
+									<img src="img/landingpage/popular2.jpg" alt="" />
+								</a>
+								<span class="price-tag price-tag-coin">£ 45</span>
+								
+							</div>
+							<div class="wrap-details">
+								<div class="comment">
+									Yoga workout on the beach with group
+								</div>
+								<div class="author">Created by Don Norman</div>	
+								<div class="star-part">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<div class="row-details top-details">
+									<div class="location">
+										<span class="icons">
+											<i class="fas fa-map-marker-alt"></i>
+										</span>
+										London, UK
+									</div>
+									<div class="top-details-right">86 reviews</div>
+								</div>
+								<div class="row-details top-details">
+									<div class="date">
+										<span class="icons">
+											<i class="fas fa-calendar-alt"></i>
+										</span>
+										4 february 2020
+									</div>
+									<div class="top-details-right"><span class="strong">18/20</span> joined</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				  </div>
+				  <div class="carousel-item">
+					<div class="col-12 col-md-3">
+						<div class="card-pvlse">
+							<div class="wrap-img">
+								<a href="details-page.html">
+									<img src="img/landingpage/popular3.jpg" alt="" />
+								</a>
+								<span class="price-tag price-tag-coin">£ 45</span>
+								
+							</div>
+							<div class="wrap-details">
+								<div class="comment">
+									Yoga workout on the beach with group
+								</div>
+								<div class="author">Created by Don Norman</div>	
+								<div class="star-part">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<div class="row-details top-details">
+									<div class="location">
+										<span class="icons">
+											<i class="fas fa-map-marker-alt"></i>
+										</span>
+										London, UK
+									</div>
+									<div class="top-details-right">86 reviews</div>
+								</div>
+								<div class="row-details top-details">
+									<div class="date">
+										<span class="icons">
+											<i class="fas fa-calendar-alt"></i>
+										</span>
+										4 february 2020
+									</div>
+									<div class="top-details-right"><span class="strong">18/20</span> joined</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				  </div>
+				  <div class="carousel-item">
+					<div class="col-12 col-md-3">
+						<div class="card-pvlse">
+							<div class="wrap-img">
+								<a href="details-page.html">
+									<img src="img/landingpage/popular4.jpg" alt="" />
+								</a>
+								<span class="price-tag price-tag-free">FREE</span>
+								
+							</div>
+							<div class="wrap-details">
+								<div class="comment">
+									Yoga workout on the beach with group
+								</div>
+								<div class="author">Created by Don Norman</div>	
+								<div class="star-part">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<div class="row-details top-details">
+									<div class="location">
+										<span class="icons">
+											<i class="fas fa-map-marker-alt"></i>
+										</span>
+										London, UK
+									</div>
+									<div class="top-details-right">86 reviews</div>
+								</div>
+								<div class="row-details top-details">
+									<div class="date">
+										<span class="icons">
+											<i class="fas fa-calendar-alt"></i>
+										</span>
+										4 february 2020
+									</div>
+									<div class="top-details-right"><span class="strong">18/20</span> joined</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				  </div>				  		  
+				</div>			  
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section section-pvlses-categories">
+	<div class="container">
+		<div class="row row-pvlses-categories">
+			<div class="col-12">
+				<p>You may be interested in more experiences from</p>
+				<p>other categories:</p>
+			</div>			
+		</div>
+		<div class="carousel horizon slide" data-ride="carousel" id="carousel-cat-other">				
+			<a class="carousel-control-prev" href="#carousel-cat-other" data-slide="prev">
+				<span class="carousel-control-prev-icon"><i class="fas fa-angle-left"></i></span>
+			</a>
+			<a class="carousel-control-next" href="#carousel-cat-other" data-slide="next">
+				<span class="carousel-control-next-icon"><i class="fas fa-angle-right"></i></span>
+			</a>
+			<div class="carousel-inner" role="listbox">			  
+			  <div class="carousel-item active">
+				<div class="col-12 col-md-3">
+					<div class="card-pvlse-cat">
+						<div class="wrap-img-cat">
+							<a href="category.html">
+								<img src="img/landingpage/category1.jpg" alt="" />
+							</a>
+							<div class="cat-name">COOKING</div>
+						</div>
+					</div>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<div class="col-12 col-md-3">
+					<div class="card-pvlse-cat">
+						<div class="wrap-img-cat">
+							<a href="category.html">
+								<img src="img/landingpage/category2.jpg" alt="" />
+							</a>
+							<div class="cat-name">FITNESS</div>
+						</div>
+					</div>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<div class="col-12 col-md-3">
+					<div class="card-pvlse-cat">
+						<div class="wrap-img-cat">
+							<a href="category.html">
+								<img src="img/landingpage/category3.jpg" alt="" />
+							</a>
+							<div class="cat-name">RUNNING</div>
+						</div>
+					</div>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<div class="col-12 col-md-3">
+					<div class="card-pvlse-cat">
+						<div class="wrap-img-cat">
+							<a href="category.html">
+								<img src="img/landingpage/category4.jpg" alt="" />
+							</a>
+							<div class="cat-name">YOGA</div>
+						</div>
+					</div>
+				</div>
+			  </div>				  		  
+			</div>			  
+		</div>
+	</div>
+</section>
+
+<div class="modal fade photos-modal" id="photosModal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog photos-modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<div class="clearfix"></div>
+			</div>
+			<div class="modal-body">
+				<div class="carousel slide" data-ride="carousel" id="carousel-modal">
+					<a class="carousel-control-prev" href="#carousel-modal" data-slide="prev">
+						<span class="carousel-control-prev-icon"><i class="fas fa-angle-left"></i></span>
+					</a>
+					<a class="carousel-control-next" href="#carousel-modal" data-slide="next">
+						<span class="carousel-control-next-icon"><i class="fas fa-angle-right"></i></span>
+					</a>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="wrap-modal-img">
+								<a data-toggle="modal" data-target="#photosModal" href="#">
+									<img src="img/detailpage/test1.jpg" alt="" />
+								</a>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="wrap-modal-img">
+								<a data-toggle="modal" data-target="#photosModal" href="#">
+									<img src="img/detailpage/test2.jpg" alt="" />
+								</a>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="wrap-modal-img">
+								<a data-toggle="modal" data-target="#photosModal" href="#">
+									<img src="img/detailpage/test.jpg" alt="" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade photos-modal" id="photosModal2" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog photos-modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<div class="clearfix"></div>
+			</div>
+			<div class="modal-body">
+				<div class="carousel slide" data-ride="carousel" id="carousel-modal2">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="wrap-modal-img">
+								<a data-toggle="modal" data-target="#photosModal" href="#">
+									<img src="img/pvlses-cat/img-pvlses-cat8.png" alt="" />
+								</a>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="wrap-modal-img">
+								<a data-toggle="modal" data-target="#photosModal" href="#">
+									<img src="img/pvlses-cat/img-pvlses-cat5.png" alt="" />
+								</a>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="wrap-modal-img">
+								<a data-toggle="modal" data-target="#photosModal" href="#">
+									<img src="img/pvlses-cat/img-pvlses-cat6.png" alt="" />
+								</a>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="wrap-modal-img">
+								<a data-toggle="modal" data-target="#photosModal" href="#">
+									<img src="img/pvlses-cat/img-pvlses-cat7.png" alt="" />
+								</a>
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#carousel-modal2" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next" href="#carousel-modal2" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 footer-links">
+				<div class="text-center">
+					© 2020 PVLSE - All rights reserved
+				</div>
+				<a data-toggle="modal" data-target="#modalPrivacy" class="link">Privacy Policy</a>
+				<a data-toggle="modal" data-target="#termsModal" class="link">Community Guidelines</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<div class="clearfix"></div>
+			</div>
+			<div class="modal-body">
+				<h1 class="modal-title">Welcome back!</h1>
+				<form>
+					<h6 class="form-msg text-error">Please insert a valid email</h6>
+					<div class="row row-form">
+						<div class="col-lg-12 col-xs-12">
+							<i class="login-icon login-icon-username"></i>
+							<label>Email</label>
+							<input class="form-control form-control-with-icon is-valid" value="" placeholder="name@email.com" type="text" required />
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-12">
+							<i class="login-icon login-icon-password"></i>
+							<label>Password</label>
+							<input class="form-control form-control-with-icon is-invalid" value="" placeholder="********" type="password" required />
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-12 col-sm-6 col-md-6 wrap-remember">
+							<div class="custom-checkbox">
+								<input class="form-control" value="" type="checkbox" />
+								<label class="label-form-control label-checkbox label-terms">
+									Keep me logged in
+								</label>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 wrap-forgot">
+							<a data-toggle="modal" data-target="#forgotPasswordModal" href="#">Forgot your password?</a>
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-lg-12 col-xs-12 form-row text-center">
+							<button class="btn btn-primary btn-login">Login</button>
+							<!--<a href="my-profile.html" class="btn btn-primary btn-login">Login</a>-->
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="turn-signup">
+				Don't have an account? 
+				<a data-toggle="modal" data-target="#registerModal" href="#" class="link-register">Sign up</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade register-modal" id="registerModal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog static-pg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<div class="clearfix"></div>
+			</div>
+			<div class="modal-body">
+				<h1 class="modal-title">Welcome!</h1>
+				<form>
+					<h6 class="form-msg text-success">Your account was created!</h6>
+					<div class="row row-form">
+						<div class="col-lg-12 col-xs-12">
+							<i class="login-icon login-icon-username"></i>
+							<label>Email</label>
+							<input class="form-control form-control-with-icon" value="" placeholder="name@email.com" type="text" required/>
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-lg-12 col-xs-12">
+							<i class="login-icon login-icon-password"></i>
+							<label>Password</label>
+							<input class="form-control form-control-with-icon" value="" placeholder="********" type="password" required/>
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-lg-12 col-xs-12">
+							<i class="login-icon login-icon-password"></i>
+							<label>Repeat password</label>
+							<input class="form-control form-control-with-icon" value="" placeholder="********" type="password" required/>
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-12 wrap-remember">
+							<div class="custom-checkbox">
+								<input class="form-control" value="" type="checkbox">
+								<label class="label-form-control label-checkbox label-terms">
+									I read <a href="#">Terms & Conditions</a>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-lg-12 col-xs-12 form-row text-center">
+							<a href="my-profile.html" class="btn btn-primary btn-login">Sign up</a>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="turn-signup">
+				<a data-toggle="modal" data-target="#loginModal" href="#" class="link-register link-login">Login</a>
+			</div>			
+		</div>
+	</div>
+</div>
+<div class="modal fade login-modal forgotPasswordModal" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<div class="clearfix"></div>
+			</div>
+			<div class="modal-body">
+				<h1 class="modal-title">Reset password</h1>
+				<div class="reset-alert">This account doesn’t exist.</div>
+				<form>
+					<div class="row row-form">
+						<div class="col-lg-12 col-xs-12">
+							<i class="login-icon login-icon-username"></i>
+							<label>Email</label>
+							<input class="form-control form-control-with-icon" value="" placeholder="name@email.com" type="text" required />
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-lg-12 col-xs-12 form-row text-center">
+							<a href="index.html" class="btn btn-primary btn-login">Send reset link</a>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="turn-signup">
+				<a data-toggle="modal" data-target="#registerModal" href="#" class="link-register forgot">Sign up</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="new-msg" id="new-msg">
+	<div class="title-bar">
+		<span class="blank">New message</span>
+		<span class="close">×</span>
+		<span class="mini">_</span>
+		<span class="max">□</span>
+	</div>
+	<div class="content">
+		<form>
+			<div class="item">
+				<span>To</span>
+				<input type="text" name="msg_to" />
+			</div>
+			<div class="item">
+				<span>Subject</span>
+				<input type="text" name="msg_subject" />
+			</div>
+			<div class="msg-area">
+				<textarea class="msg-body" rows="5" name="msg-body"></textarea>
+			</div>
+			<div class="action">
+				<button class="send-btn">SEND</button>
+				<span class="del"><img src="img/del.png"></span>
+			</div>
+		</form>		
+	</div>
+</div>
+<div class="order-summary">
+	<div class="order-body">
+		<div class="bar">
+			<span class="close">×</span>
+		</div>
+		<div class="contents">
+			<div class="title">Order summary</div>
+			<div class="items">
+				<div class="item">
+					<span class="txt">[Activity name]</span>
+					<span class="value">$ 00.00</span>
+				</div>
+				<div class="item">
+					<span class="txt">Payment processing fees</span>
+					<span class="value">$ 00.00</span>
+				</div>
+				<div class="line"></div>
+				<div class="result">
+					<span class="txt">Total</span>
+					<span class="value">$ 00.00</span>
+				</div>
+				<div class="result">
+					<span class="txt">Pay with</span>
+				</div>
+				<div class="selector">
+					<select class="customized-select">
+						<option value="1">[CARD TYPE **** 0000]</option>
+						<option value="2">Add payment method</option>
+					</select>
+				</div>
+				<div class="action">
+					<button class="btn pay">Pay</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="js/vendor/jquery-3.3.1.min.js"></script>
+<script src="js/vendor/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/vendor/moment.min.js"></script>
+<script type="text/javascript" src="js/vendor/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="js/vendor/daterangepicker.css" />
+
+<script src="js/main.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script>
+// autocomplete JQuery UI
+jQuery(document).ready(function($){
+	var data = [
+		"Alabama",
+		"Alaska",
+		"Arizona",
+		"Arkansas",
+		"California",
+		"Colorado",
+		"Connecticut",
+		"Delaware",
+		"Florida",
+		"Georgia",
+		"Hawaii",
+		"Idaho",
+		"Illnois",
+		"Indiana",
+		"Iowa",
+		"Kansas",
+		"Kentucky",
+		"Louisiana",
+		"Maine",
+		"Maryland",
+		"Massachusetts",
+		"Michigan",
+		"Minnesota",
+		"Mississippi",
+		"Missouri",
+		"Montana",
+		"Nebraska",
+		"Nevada",
+		"New Hampshire",
+		"New Jersey",
+		"New Mexico",
+		"New York",
+		"North Carolina",
+		"North Dakota",
+		"Ohio",
+		"Oklahoma",
+		"Oregon",
+		"Pennsylvania",
+		"Rhode Island",
+		"South Carolina",
+		"South Dakota",
+		"Tennessee",
+		"Texas",
+		"Utah",
+		"Vermont",
+		"Virginia",
+		"Washington",
+		"West Virginia",
+		"Wisconsin",
+		"Wyoming"
+	];
+
+	$('#search').autocomplete({
+		source : data ,
+		autoFocus : true ,
+		delay : 500 ,
+		minLength : 2
+	});
+
+	var search_width = $("#search").width();
+	$(".ui-widget.ui-widget-content").css("max-width", search_width+70);	
+
+	// top slider part  --mask image -- clipping
+	var main_height = $(".section-details-top .wrap-img-main").width();
+	$(".section-details-top .wrap-img-main").height(main_height);
+	$(".section-details-top .wrap-img-main img").css("clip","rect(0px, "+main_height+"px,"+ main_height+"px , 0px)");
+
+	var small_height = $(".wrap-sec-img").width();
+	$(".wrap-sec-img").height(small_height);
+
+	// order summary popup	
+	$(".order-summary .close").click(function(){
+		$(".order-summary").css("display","none");
+	});
+	
+});	
+//  resize window event --- responsive
+$(window).on('resize', function(){
+	// top slider part  --mask image -- clipping
+	main_height = $(".section-details-top .wrap-img-main").width();
+	$(".section-details-top .wrap-img-main").height(main_height);
+	$(".section-details-top .wrap-img-main img").css("clip","rect(0px, "+main_height+"px,"+ main_height+"px , 0px)");
+
+	small_height = $(".wrap-sec-img").width();
+	console.log(small_height);
+	$(".wrap-sec-img").height(small_height);
+});
+
+
+
+</script>
+</body>
+</html>

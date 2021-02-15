@@ -1,0 +1,916 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>PVLSE | Create pvlse</title>
+	<meta name="description" content="PVLSE - Create pvlse">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Place favicon.ico in the root directory -->
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+	<link rel="icon" href="favicon.png" type="image/x-icon"/>
+	<link rel="stylesheet" href="sass/all-fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="js/vendor/jquery.datetimepicker.css" />
+	<link rel="stylesheet" href="sass/screen.css">
+	<link rel="stylesheet" href="sass/croppie.min.css">	
+
+	
+</head>
+
+<body class="page create-pvlse">
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+	your browser</a> to improve your experience and security.</p>
+<![endif]-->
+<header>
+	<nav>
+		<div class="container container-top">
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title>
+						<path stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+				</span>
+			</button>
+			<a href="index.html" class="logo">
+				<img src="img/logo.svg" alt=""/>
+			</a>
+			<div class="navbar row" id="navbar">
+				<div class="col-12 col-sm-12 col-md-8 col-lg-8 nav-menu-left">
+					<span>
+						<span class="nav-link nav-link-install-text">Install app</span>
+						<a href="https://apps.apple.com/us/app/pvlse/id1409396043" class="nav-link nav-icon apple"></a>
+						<a href="https://play.google.com/store/apps/details?id=com.thepvlse.app&hl=en" class="nav-link nav-icon google-play"></a>
+					</span>
+				</div>
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 nav-menu-right">
+					<a href="#" class="nav-link nav-create">+CREATE</a>
+					<a href="wishlist.html" class="nav-link nav-icon wishlist"></a>
+					<a href="#" class="nav-link nav-icon inbox"></a>
+					<a data-toggle="modal" data-target="#loginModal" href="#" class="nav-link nav-login">Login</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>
+<section class="section section-pvlses create-pvlse">
+	<div class="container">
+		<div class="section-wrap-titles">
+			<div class="breadcrumb-pvlses">
+				<a href="index.html" class="breadcrumb-item">
+					My account
+				</a>
+				<div class="breadcrumb-sep">/</div>
+				<div>Create pvlse</div>
+			</div>
+			<h2 class="section-title">Pvlse details</h2>
+		</div>
+		<form class="form-create-pvlse">
+			<div class="row row-create-pvlse">
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-create-pvlse-left">
+					<div class="row row-form">
+						<div class="col-12">
+							<label>Title <span class="required">*</span></label>
+							<input class="form-control" value="" placeholder="Acroyoga lesson with advanced poses and photography" type="text" required/>
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-6 col-md-5">
+							<label>Category <span class="required">*</span></label>
+							<div class="sel-custom selector">
+								<select class="customized-select">
+									<option value="0">action</option>
+									<option value="1">balard</option>
+									<option value="2">srill</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-6 col-md-5">
+							<label>Lifestyle (optional)</label>
+							<div class="sel-custom selector">
+								<select class="customized-select">
+									<option value="0">Yoga</option>
+									<option value="1">Fitness</option>
+									<option value="2">Cooking</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="addtional-date">
+						<div class="row row-form" id="date1">
+							<div class="col-7 col-md-5 col-lg-5 col-xl-5">
+								<label>Date and time</label>
+								<input type="text" class="form-control datetimepicker-input" id="datetimepicker1" data-toggle="datetimepicker" data-target="#datetimepicker1" placeholder="dd/mm/yyyy 00:00"/>
+							</div>
+							<div class="col-5 col-md-7 col-lg-7 col-xl-7 more-dates-start">
+								<span id="add-date-btn1">Add more dates?</span>
+							</div>
+						</div>
+						<div class="row row-form row-date" id="date2">
+							<div class="col-7 col-md-5 col-lg-5 col-xl-5">
+								<input type="text" class="form-control datetimepicker-input" id="datetimepicker2" data-toggle="datetimepicker" data-target="#datetimepicker2" placeholder="dd/mm/yyyy 00:00"/>
+							</div>
+							<div class="col-5 col-md-7 col-lg-7 col-xl-7 more-dates">
+								<i class="fa fa-trash del-date" aria-hidden="true" id="del-dates2"></i>
+								<span id="add-date-btn2">Add more dates?</span>
+							</div>
+						</div>
+						<div class="row row-form row-date" id="date3">
+							<div class="col-7 col-md-5 col-lg-5 col-xl-5">
+								<input type="text" class="form-control datetimepicker-input" id="datetimepicker3" data-toggle="datetimepicker" data-target="#datetimepicker3" placeholder="dd/mm/yyyy 00:00"/>
+							</div>
+							<div class="col-5 col-md-7 col-lg-7 col-xl-7 more-dates">
+								<i class="fa fa-trash del-date" aria-hidden="true" id="del-dates3"></i>
+								<span id="add-date-btn3">Add more dates?</span>
+							</div>
+						</div>
+						<div class="row row-form row-date" id="date4">
+							<div class="col-7 col-md-5 col-lg-5 col-xl-5">
+								<input type="text" class="form-control datetimepicker-input" id="datetimepicker4" data-toggle="datetimepicker" data-target="#datetimepicker4" placeholder="dd/mm/yyyy 00:00"/>
+							</div>
+							<div class="col-5 col-md-7 col-lg-7 col-xl-7 more-dates">
+								<i class="fa fa-trash del-date" aria-hidden="true" id="del-dates4"></i>
+								<span id="add-date-btn4">Add more dates?</span>
+							</div>
+						</div>
+						<div class="row row-form row-date" id="date5">
+							<div class="col-7 col-md-5 col-lg-5 col-xl-5">
+								<input type="text" class="form-control datetimepicker-input" id="datetimepicker5" data-toggle="datetimepicker" data-target="#datetimepicker5" placeholder="dd/mm/yyyy 00:00"/>
+							</div>
+							<div class="col-5 col-md-7 col-lg-7 col-xl-7 more-dates">
+								<i class="fa fa-trash del-date" aria-hidden="true" id="del-dates5"></i>
+								<span id="add-date-btn5">Add more dates?</span>
+							</div>
+						</div>
+						<div class="row row-form row-date" id="date6">
+							<div class="col-7 col-md-5 col-lg-5 col-xl-5">
+								<input type="text" class="form-control datetimepicker-input" id="datetimepicker6" data-toggle="datetimepicker" data-target="#datetimepicker6" placeholder="dd/mm/yyyy 00:00"/>
+							</div>
+							<div class="col-5 col-md-7 col-lg-7 col-xl-7 more-dates">
+								<i class="fa fa-trash del-date" aria-hidden="true" id="del-dates6"></i>
+								<span id="add-date-btn6">Add more dates?</span>
+							</div>
+						</div>
+						<div class="row row-form row-date" id="date7">
+							<div class="col-7 col-md-5 col-lg-5 col-xl-5">
+								<input type="text" class="form-control datetimepicker-input" id="datetimepicker7" data-toggle="datetimepicker" data-target="#datetimepicker7" placeholder="dd/mm/yyyy 00:00"/>
+							</div>
+							<div class="col-5 col-md-7 col-lg-7 col-xl-7 more-dates">
+								<i class="fa fa-trash del-date" aria-hidden="true" id="del-dates7"></i>								
+							</div>
+						</div>
+					</div>									
+					<div class="row row-form">
+						<div class="col-12 col-md-12 col-lg-4 col-xl-4 duration">
+							<div class="item">
+								<label>Duration</label>
+								<input class="form-control" placeholder="Hr" type="text" required/>
+							</div>
+							<div>
+								<label>&nbsp;</label>
+								<span class="colon">:</span>
+							</div>
+							<div class="item">
+								<label>&nbsp;</label>
+								<input class="form-control" placeholder="Min" type="text" required/>
+							</div>
+						</div>
+						<div class="col-12 col-md-12 col-lg-8 col-xl-8 ">
+							<div class="row">
+								<div class="col-4">
+									<label>Max participants</label>
+									<input class="form-control" value="20" type="text" required/>
+								</div>
+								<div class="col-4 price-tooltip">
+									<label>Price <span><i class="fas fa-info"></i></span></label>
+									<span class="tooltiptext">If your activity costs nothing to attend please type 0</span>          <!----- Mouse Hover Tooltip ---->
+									<input class="form-control" value="45" type="text" required/>
+								</div>
+								<div class="col-4">
+									<label>Currency</label>
+									<div class="sel-custom selector">
+										<select class="customized-select">
+											<option value="0">GBP</option>
+											<option value="1">EUR</option>
+											<option value="2">USD</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-create-pvlse-right">
+					<label>Description</label>
+					<textarea class="form-control textarea-create-pvlse">First of all, if you don’t see a date or time available that will work for you and a partner let me know when would be good and I’ll try to set something up!
+We will have a short warm up and intro on acro-etiquette, then your education will begin. This will be a fun session in which we explore our capabilities in the world of AcroYoga.  We will be at a gorgeous beach cliff location and will take as many photos as you want!
+So this is how it goes functionally:
+
+All poses will be demonstrated and broken down for bases, flyers, and spotters.
+
+By the end of our time you will learn:
+⁃	how to base, fly and spot foundational postures
+⁃	how to access stability when basing and flying through bone stacking and core engagement
+⁃	how to spot correctly for each posture and cultivate a safe space to grow within
+⁃	how to communicate effectively and build trust with your partners
+⁃	how to connect learned foundational postures into a final flow
+					</textarea>
+				</div>
+			</div>		
+			
+		</form>
+	</div>
+</section>
+<section class="create-pvlse map-gallery">
+	<div class="container">
+		<h2 class="section-title">Gallery photos</h2>
+		<div class="row row-create-pvlse">			
+			<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-create-pvlse-left">
+				<div class="multi-gallery">
+					<div class="row gallery">
+						<div class="col-12 col-md-8">
+							<div id="upload-main">
+								<div class="symbol-change"><span class="symbol-x">X</span></div>
+								<input type="file" class="main">
+							</div>	
+						</div>
+						<div class="col-12 col-md-4">
+							<div class="row side-gallery">
+								<div class="crop-part col-6 col-md-12">
+									<div id="upload-for">
+										<div class="symbol-change"><span class="symbol-x">X</span></div>
+										<input type="file" class="forth">
+									</div>
+								</div>
+								<div class="crop-part col-6 col-md-12 right-cell">
+									<div id="upload-fif">
+										<div class="symbol-change"><span class="symbol-x">X</span></div>
+										<input type="file" class="fifth">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row gallery">					
+						<div class="col-6 col-md-4">
+							<div class="crop-part cell">
+								<div id="upload-fst">
+									<div class="symbol-change"><span class="symbol-x">X</span></div>
+									<input type="file" class="first">
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-md-4">
+							<div class="crop-part">
+								<div id="upload-snd">
+									<div class="symbol-change"><span class="symbol-x">X</span></div>
+									<input type="file" class="second">
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-md-4">
+							<div class="crop-part">
+								<div id="upload-trd">
+									<div class="symbol-change"><span class="symbol-x">X</span></div>
+									<input type="file" class="third">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 gallery-bottom">
+						<button class="btn form-btn-right gallery-upload-btn">
+							UPLOAD
+						</button>
+					</div>
+				</div><!----multi gallery ---->
+			</div>
+			<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-create-pvlse-right">
+				<form class="map-form">
+					<div class="switch-online">
+						<label>Pvlse location</label>
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input check-online" id="online" name="payment-type">
+							<label class="custom-control-label" for="online">Online</label>
+						</div>
+
+						<!--<span class="online-box"><input class="check-online" type="checkbox" value="">Online</span>-->
+					</div>
+					<input class="form-control controls" id="pac-input" value="" placeholder="Church Lane, London N2 8DX, UK" type="text" required />
+					<p class="online-txt">Add your online session link. We suggest using Zoom, Google Meet, or Skype.</p>
+				</form>
+				<div id="gmapdisplay" class="map">
+					<iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=london&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+					</iframe>
+				</div>
+			</div>
+		</div>		
+		<div class="row row-form">
+			<div class="col-12">
+				<button class="btn btn-primary form-btn-right create-all">
+					CREATE PVLSE
+				</button>
+			</div>
+		</div>
+	</div>
+</section>
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 footer-links">
+				<div class="text-center">
+					© 2020 PVLSE - All rights reserved
+				</div>
+				<a data-toggle="modal" data-target="#modalPrivacy" class="link">Privacy Policy</a>
+				<a data-toggle="modal" data-target="#termsModal" class="link">Community Guidelines</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<div class="clearfix"></div>
+			</div>
+			<div class="modal-body">
+				<h1 class="modal-title">Welcome back!</h1>
+				<form>
+					<h6 class="form-msg text-error">Please insert a valid email</h6>
+					<div class="row row-form">
+						<div class="col-lg-12 col-xs-12">
+							<i class="login-icon login-icon-username"></i>
+							<label>Email</label>
+							<input class="form-control form-control-with-icon is-valid" value="" placeholder="name@email.com" type="text" required />
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-12">
+							<i class="login-icon login-icon-password"></i>
+							<label>Password</label>
+							<input class="form-control form-control-with-icon is-invalid" value="" placeholder="********" type="password" required />
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-12 col-sm-6 col-md-6 wrap-remember">
+							<div class="custom-checkbox">
+								<input class="form-control" value="" type="checkbox" />
+								<label class="label-form-control label-checkbox label-terms">
+									Keep me logged in
+								</label>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 wrap-forgot">
+							<a data-toggle="modal" data-target="#forgotPasswordModal" href="#">Forgot your password?</a>
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-lg-12 col-xs-12 form-row text-center">
+							<button class="btn btn-primary btn-login">Login</button>
+							<!--<a href="my-profile.html" class="btn btn-primary btn-login">Login</a>-->
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="turn-signup">
+				Don't have an account? 
+				<a data-toggle="modal" data-target="#registerModal" href="#" class="link-register">Sign up</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade register-modal" id="registerModal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog static-pg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<div class="clearfix"></div>
+			</div>
+			<div class="modal-body">
+				<h1 class="modal-title">Welcome!</h1>
+				<form>
+					<h6 class="form-msg text-success">Your account was created!</h6>
+					<div class="row row-form">
+						<div class="col-lg-12 col-xs-12">
+							<i class="login-icon login-icon-username"></i>
+							<label>Email</label>
+							<input class="form-control form-control-with-icon" value="" placeholder="name@email.com" type="text" required/>
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-lg-12 col-xs-12">
+							<i class="login-icon login-icon-password"></i>
+							<label>Password</label>
+							<input class="form-control form-control-with-icon" value="" placeholder="********" type="password" required/>
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-lg-12 col-xs-12">
+							<i class="login-icon login-icon-password"></i>
+							<label>Repeat password</label>
+							<input class="form-control form-control-with-icon" value="" placeholder="********" type="password" required/>
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-12 wrap-remember">
+							<div class="custom-checkbox">
+								<input class="form-control" value="" type="checkbox">
+								<label class="label-form-control label-checkbox label-terms">
+									I read <a href="#">Terms & Conditions</a>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-lg-12 col-xs-12 form-row text-center">
+							<a href="my-profile.html" class="btn btn-primary btn-login">Sign up</a>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="turn-signup">
+				<a data-toggle="modal" data-target="#loginModal" href="#" class="link-register link-login">Login</a>
+			</div>			
+		</div>
+	</div>
+</div>
+<div class="modal fade login-modal forgotPasswordModal" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<div class="clearfix"></div>
+			</div>
+			<div class="modal-body">
+				<h1 class="modal-title">Reset password</h1>
+				<div class="reset-alert">This account doesn’t exist.</div>
+				<form>
+					<div class="row row-form">
+						<div class="col-lg-12 col-xs-12">
+							<i class="login-icon login-icon-username"></i>
+							<label>Email</label>
+							<input class="form-control form-control-with-icon" value="" placeholder="name@email.com" type="text" required />
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-lg-12 col-xs-12 form-row text-center">
+							<a href="index.html" class="btn btn-primary btn-login">Send reset link</a>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="turn-signup">
+				<a data-toggle="modal" data-target="#registerModal" href="#" class="link-register forgot">Sign up</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="new-msg" id="new-msg">
+	<div class="title-bar">
+		<span class="blank">New message</span>
+		<span class="close">×</span>
+		<span class="mini">_</span>
+		<span class="max">□</span>
+	</div>
+	<div class="content">
+		<form>
+			<div class="item">
+				<span>To</span>
+				<input type="text" name="msg_to" />
+			</div>
+			<div class="item">
+				<span>Subject</span>
+				<input type="text" name="msg_subject" />
+			</div>
+			<div class="msg-area">
+				<textarea class="msg-body" rows="5" name="msg-body"></textarea>
+			</div>
+			<div class="action">
+				<button class="send-btn">SEND</button>
+				<span class="del"><img src="img/del.png"></span>
+			</div>
+		</form>		
+	</div>
+</div>
+<script src="js/vendor/jquery-3.3.1.min.js"></script>
+<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="js/vendor/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/vendor/moment.min.js"></script>
+<script type="text/javascript" src="js/vendor/jquery.datetimepicker.js"></script>
+<script>
+	function initAutocomplete() {
+		var map = new google.maps.Map(document.getElementById('map'), {
+			center: {lat: -33.8688, lng: 151.2195},
+			zoom: 13,
+			mapTypeId: 'roadmap'
+		});
+
+		// Create the search box and link it to the UI element.
+		var input = document.getElementById('pac-input');
+		var searchBox = new google.maps.places.SearchBox(input);
+		map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+		// Bias the SearchBox results towards current map's viewport.
+		map.addListener('bounds_changed', function() {
+			searchBox.setBounds(map.getBounds());
+		});
+
+		var markers = [];
+		// Listen for the event fired when the user selects a prediction and retrieve
+		// more details for that place.
+		searchBox.addListener('places_changed', function() {
+			var places = searchBox.getPlaces();
+
+			if (places.length == 0) {
+				return;
+			}
+
+			// Clear out the old markers.
+			markers.forEach(function(marker) {
+				marker.setMap(null);
+			});
+			markers = [];
+
+			// For each place, get the icon, name and location.
+			var bounds = new google.maps.LatLngBounds();
+			places.forEach(function(place) {
+				if (!place.geometry) {
+					console.log("Returned place contains no geometry");
+					return;
+				}
+				var icon = {
+					url: place.icon,
+					size: new google.maps.Size(71, 71),
+					origin: new google.maps.Point(0, 0),
+					anchor: new google.maps.Point(17, 34),
+					scaledSize: new google.maps.Size(25, 25)
+				};
+
+				// Create a marker for each place.
+				markers.push(new google.maps.Marker({
+					map: map,
+					icon: icon,
+					title: place.name,
+					position: place.geometry.location
+				}));
+
+				if (place.geometry.viewport) {
+					// Only geocodes have viewport.
+					bounds.union(place.geometry.viewport);
+				} else {
+					bounds.extend(place.geometry.location);
+				}
+			});
+			map.fitBounds(bounds);
+		});
+	}
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI9bR7rH4dCUgmkReuOdpzt3uuqWAj_lc&libraries=places&callback=initAutocomplete" async defer></script>
+
+<script type="text/javascript">
+	$(function () {
+		$.datetimepicker.setDateFormatter({
+			parseDate: function (date, format) {
+				var d = moment(date, format);
+				return d.isValid() ? d.toDate() : false;
+			},
+			formatDate: function (date, format) {
+				return moment(date).format(format);
+			},
+		});
+		$('#datetimepicker1').datetimepicker({
+			format: 'DD/MM/YYYY HH:mm',
+			// added formatTime
+			formatTime: 'HH:mm',
+			lang: 'en'
+		});
+		$('#datetimepicker2').datetimepicker({
+			format: 'DD/MM/YYYY HH:mm',
+			// added formatTime
+			formatTime: 'HH:mm',
+			lang: 'en'
+		});
+		$('#datetimepicker3').datetimepicker({
+			format: 'DD/MM/YYYY HH:mm',
+			// added formatTime
+			formatTime: 'HH:mm',
+			lang: 'en'
+		});
+	});		
+</script>
+<script src="js/main.js"></script>
+
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/croppie.js"></script>
+<script>
+$(function(){
+	/// check  online
+	$(".check-online").click(function(){
+		if ($(".check-online").prop("checked") == true) {
+            $(".map").css("display", "none");
+			$(".online-txt").css("display", "block");
+			$("#pac-input").attr("placeholder", "Online session link");
+		} else {
+			$(".map").css("display", "block");
+			$(".online-txt").css("display", "none");
+			$("#pac-input").attr("placeholder", "Church Lane, London N2 8DX, UK");
+		}
+	});
+	/// add date & time
+	$("#add-date-btn1").click(function(){
+		$(".addtional-date #date2").css("display", "flex");
+	});
+	$("#add-date-btn2").click(function(){
+		$(".addtional-date #date3").css("display", "flex");
+	});
+	$("#add-date-btn3").click(function(){
+		$(".addtional-date #date4").css("display", "flex");
+	});
+	$("#add-date-btn4").click(function(){
+		$(".addtional-date #date5").css("display", "flex");
+	});
+	$("#add-date-btn5").click(function(){
+		$(".addtional-date #date6").css("display", "flex");
+	});
+	$("#add-date-btn6").click(function(){
+		$(".addtional-date #date7").css("display", "flex");
+	});
+
+	$("#del-dates2").click(function(){
+		$(".addtional-date #date2").css("display", "none");
+	});
+	$("#del-dates3").click(function(){
+		$(".addtional-date #date3").css("display", "none");
+	});
+	$("#del-dates4").click(function(){
+		$(".addtional-date #date4").css("display", "none");
+	});
+	$("#del-dates5").click(function(){
+		$(".addtional-date #date5").css("display", "none");
+	});
+	$("#del-dates6").click(function(){
+		$(".addtional-date #date6").css("display", "none");
+	});
+	$("#del-dates7").click(function(){
+		$(".addtional-date #date7").css("display", "none");
+	});
+});
+</script>
+<script>
+// cropping 
+$(document).ready(function(){	
+	// when click crop area, open file
+	$('body').on('click', '#upload-main .cr-viewport', function () {
+        $(".main").trigger('click');		
+	});
+	$('body').on('click', '#upload-fst .cr-viewport', function () {
+        $(".first").trigger('click');		
+	});
+	$('body').on('click', '#upload-snd .cr-viewport', function () {
+        $(".second").trigger('click');		
+	});
+	$('body').on('click', '#upload-trd .cr-viewport', function () {
+        $(".third").trigger('click');		
+	});
+	$('body').on('click', '#upload-for .cr-viewport', function () {
+        $(".forth").trigger('click');		
+	});
+	$('body').on('click', '#upload-fif .cr-viewport', function () {
+        $(".fifth").trigger('click');		
+	});
+	// responsive 
+	var create_gallery_height = $(".cell").width();	
+	$(".map").height(create_gallery_height * 1.8 +20);
+		
+	var main_width = $("#upload-main").width();
+	// window resize event
+	$(window).on('resize', function(){  		
+		create_gallery_height = $(".cell").width();	
+		$(".cr-boundary").width(create_gallery_height);
+		$(".cr-boundary").height(create_gallery_height/5 * 3);
+		$(".cr-viewport").width(create_gallery_height);
+		$(".cr-viewport").height(create_gallery_height/5 * 3);
+
+		var main_width = $("#upload-main").width();
+		$("#upload-main .cr-boundary").width(main_width);
+		$("#upload-main .cr-boundary").height(create_gallery_height * 1.2+10);
+		$("#upload-main .cr-viewport").width(main_width);
+		$("#upload-main .cr-viewport").height(create_gallery_height * 1.2+10);
+	});
+	// click x symbol
+	$("#upload-main .symbol-x").click(function(){
+		$(".main").trigger('click');
+	});
+	$("#upload-fst .symbol-x").click(function(){
+		$(".first").trigger('click');
+	});
+	$("#upload-snd .symbol-x").click(function(){
+		$(".second").trigger('click');
+	});
+	$("#upload-trd .symbol-x").click(function(){
+		$(".third").trigger('click');
+	});
+	$("#upload-for .symbol-x").click(function(){
+		$(".forth").trigger('click');
+	});
+	$("#upload-fif .symbol-x").click(function(){
+		$(".fifth").trigger('click');
+	});
+	//main gallery	
+	var main = $('#upload-main').croppie({
+        enableExif: true,
+		enableOrientation: true,
+		enforceBoundary: false,
+        viewport: {
+            width: main_width,
+            height:create_gallery_height * 1.2+10,
+            type: 'rectangle'
+        },
+        boundary: {
+            width: main_width,
+            height: create_gallery_height * 1.2+10,
+        }
+    });
+
+    $('.main').on('change', function () {
+		$("#upload-main .symbol-change").slideDown(1000);
+		$("#upload-main .cr-slider").fadeIn(700);
+		$("#upload-main .cr-viewport").css({'cssText': 'box-shadow: 0 0 2000px 2000px rgba(0,0,0,0.5) !important' });
+		$("#upload-main .cr-viewport").width(main_width - 20);
+		$("#upload-main .cr-viewport").height(create_gallery_height * 1.2 - 10);
+	
+		var reader = new FileReader();
+        reader.onload = function (e) {
+            main.croppie('bind',{
+                url: e.target.result
+            }).then(function(){
+                console.log('jQuery bind complete');
+            });
+        }
+        reader.readAsDataURL(this.files[0]);
+        $("#upload-main .cr-viewport").css("background", "none");
+	}); 
+
+	//first gallery
+	var first = $('#upload-fst').croppie({
+        enableExif: true,
+		enableOrientation: true,
+		enforceBoundary: false,
+        viewport: {
+            width: create_gallery_height,
+            height: create_gallery_height/5 *3,
+            type: 'rectangle'
+        },
+        boundary: {
+            width: create_gallery_height,
+            height: create_gallery_height/5 * 3,
+        }
+    });
+
+    $('.first').on('change', function () {
+		$("#upload-fst .symbol-change").slideDown(700);
+		$("#upload-fst .cr-slider").fadeIn(700);
+		
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            first.croppie('bind',{
+                url: e.target.result
+            }).then(function(){
+                console.log('jQuery bind complete');
+            });
+        }
+        reader.readAsDataURL(this.files[0]);
+        $("#upload-fst .cr-viewport").css("background", "none");
+	}); 
+	
+	//second gallery
+	var second = $('#upload-snd').croppie({
+        enableExif: true,
+		enableOrientation: true,
+		enforceBoundary: false,
+        viewport: {
+            width: create_gallery_height,
+            height: create_gallery_height/5 * 3,
+            type: 'rectangle'
+        },
+        boundary: {
+            width: create_gallery_height,
+            height: create_gallery_height/5 * 3,
+        }
+    });
+
+    $('.second').on('change', function () {
+		$("#upload-snd .symbol-change").slideDown(700);
+		$("#upload-snd .cr-slider").fadeIn(700);
+		
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            second.croppie('bind',{
+                url: e.target.result
+            }).then(function(){
+                console.log('jQuery bind complete');
+            });
+        }
+        reader.readAsDataURL(this.files[0]);
+        $("#upload-snd .cr-viewport").css("background", "none");
+	}); 
+
+	//third gallery
+	var third = $('#upload-trd').croppie({
+        enableExif: true,
+		enableOrientation: true,
+		enforceBoundary: false,
+        viewport: {
+            width: create_gallery_height,
+            height: create_gallery_height/5 * 3,
+            type: 'rectangle'
+        },
+        boundary: {
+            width: create_gallery_height,
+            height: create_gallery_height/5 * 3,
+        }
+    });
+
+    $('.third').on('change', function () {
+		$("#upload-trd .symbol-change").slideDown(700);
+		$("#upload-trd .cr-slider").fadeIn(700);
+		
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            third.croppie('bind',{
+                url: e.target.result
+            }).then(function(){
+                console.log('jQuery bind complete');
+            });
+        }
+        reader.readAsDataURL(this.files[0]);
+        $("#upload-trd .cr-viewport").css("background", "none");
+	}); 
+	//forth gallery
+	var forth = $('#upload-for').croppie({
+        enableExif: true,
+		enableOrientation: true,
+		enforceBoundary: false,
+        viewport: {
+            width: create_gallery_height,
+            height: create_gallery_height/5 * 3,
+            type: 'rectangle'
+        },
+        boundary: {
+            width: create_gallery_height,
+            height: create_gallery_height/5 * 3,
+        }
+    });
+
+    $('.forth').on('change', function () {
+		$("#upload-for .symbol-change").slideDown(700);
+		$("#upload-for .cr-slider").fadeIn(700);
+		
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            forth.croppie('bind',{
+                url: e.target.result
+            }).then(function(){
+                console.log('jQuery bind complete');
+            });
+        }
+        reader.readAsDataURL(this.files[0]);
+        $("#upload-for .cr-viewport").css("background", "none");
+	}); 
+	//fifth gallery
+	var fifth = $('#upload-fif').croppie({
+        enableExif: true,
+		enableOrientation: true,
+		enforceBoundary: false,
+        viewport: {
+            width: create_gallery_height,
+            height: create_gallery_height/5 * 3,
+            type: 'rectangle'
+        },
+        boundary: {
+            width: create_gallery_height,
+            height: create_gallery_height/5 * 3,
+        }
+    });
+
+    $('.fifth').on('change', function () {
+		$("#upload-fif .symbol-change").slideDown(700);
+		$("#upload-fif .cr-slider").fadeIn(700);
+		
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            fifth.croppie('bind',{
+                url: e.target.result
+            }).then(function(){
+                console.log('jQuery bind complete');
+            });
+        }
+        reader.readAsDataURL(this.files[0]);
+        $("#upload-fif .cr-viewport").css("background", "none");
+	}); 
+});
+</script>
+</body>
+</html>

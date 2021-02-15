@@ -1,0 +1,849 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>PVLSE | My profile</title>
+	<meta name="description" content="PVLSE - My profile & settings">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Place favicon.ico in the root directory -->
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+	<link rel="icon" href="favicon.png" type="image/x-icon"/>
+	<link rel="stylesheet" href="sass/all-fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="js/vendor/jquery.datetimepicker.css" />
+	<link rel="stylesheet" href="sass/screen.css">
+	<link rel="stylesheet" href="sass/croppie.min.css">	
+</head>
+
+<body class="page">
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+	your browser</a> to improve your experience and security.</p>
+<![endif]-->
+<header>
+	<nav>
+		<div class="container container-top">
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title>
+						<path stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+				</span>
+			</button>
+			<a href="index.html" class="logo">
+				<img src="img/logo.svg" alt=""/>
+			</a>
+			<div class="navbar row" id="navbar">
+				<div class="col-12 col-sm-12 col-md-8 col-lg-8 nav-menu-left">
+					<span>
+						<span class="nav-link nav-link-install-text">Install app</span>
+						<a href="https://apps.apple.com/us/app/pvlse/id1409396043" class="nav-link nav-icon apple"></a>
+						<a href="https://play.google.com/store/apps/details?id=com.thepvlse.app&hl=en" class="nav-link nav-icon google-play"></a>
+					</span>
+				</div>
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 nav-menu-right">
+					<a href="create-pvlse.html" class="nav-link nav-create">+CREATE</a>
+					<a href="wishlist.html" class="nav-link nav-icon wishlist"></a>
+					<a href="#" class="nav-link nav-icon inbox"></a>
+					<div class="dropdown dropdown-account">
+						<a href="#" class="nav-link nav-account selected" data-toggle="dropdown" aria-expanded="false">
+							<img src="img/users/user1.png" alt="" class="nav-avatar"/>
+						</a>
+						<div class="dropdown-menu dropdown-toggle-admin" id="dropdown-toggle-admin">
+							<a href="my-profile.html" class="dropdown-nav-link active">
+								My profile
+							</a>
+							<a href="dashboard.html" class="dropdown-nav-link">
+								Dashboard
+							</a>
+							<a href="wallet.html" class="dropdown-nav-link">
+								Wallet
+							</a>
+							<a href="payments.html" class="dropdown-nav-link">
+								Payments & Cashout
+							</a>
+							<a href="joined-pvlses.html" class="dropdown-nav-link">
+								Joined pvlses <span>(9 upcoming)</span>
+							</a>
+							<a href="created-pvlses.html" class="dropdown-nav-link">
+								Created pvlses <span>(12 upcoming)</span>
+							</a>
+							<!--<a href="index.html" class="dropdown-nav-link">
+								Log Out
+							</a>-->
+							<button class="logout-btn">Log Out</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>
+<section class="section section-pvlses">
+	<div class="container">
+		<div class="section-wrap-titles">
+			<div class="breadcrumb-pvlses">
+				<a href="index.html" class="breadcrumb-item">
+					My account
+				</a>
+				<div class="breadcrumb-sep">/</div>
+				<div>My profile</div>
+			</div>
+		</div>
+		<div class="row row-pvlses">			
+			<div class="col-12 col-sm-12 col-md-6 col-lg-6 my-profile-left">
+				<h2 class="section-title my-profile">Profile photo and details</h2>
+				<div class=" row">
+					<div class="col-12 col-sm-12 col-md-5 col-lg-5">
+						<form class="form-upload-img">
+							<div class="row row-form">							
+								<div class="col-12">
+									<div class="crop-part">
+										<div id="upload-demo">
+											<div class="symbol-change"><span class="symbol-x">X</span></div>
+											<input type="file" class="image">
+											<!--<label class="change-image"><input type="file" class="image">Change Picture</label>-->
+										</div>
+									</div>								
+									<button class="btn btn-upload btn-upload-profile" id="btn-upload-profile">UPLOAD</button>
+								</div>					
+							</div>
+						</form>
+					</div>
+					<div class="col-12 col-sm-12 col-md-7 col-lg-7">
+						<form class="save-txt">
+							<div>
+								<textarea class="form-control">Smoothie enthusiast and nature lover. She lives in London where she pursues her passion for AcroYoga, Yoga and Meditation. She holds a 500 RYT Yoga Alliance certification along with a Acroyoga International certification as well!
+							</textarea>
+							</div>
+							<div>
+								<button class="btn btn-primary form-btn-right txt-save-btn">
+									SAVE
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-12 col-md-6 col-lg-6 my-profile-right">
+				<h2 class="section-title my-profile">Interests</h2>
+				<div class="">
+					<div class="wrap-interests-tags col-12">
+						<div class="tag interest-tag">Running <span>x</span></div>
+						<div class="tag interest-tag">Walking <span>x</span></div>
+						<div class="tag interest-tag">Fitness <span>x</span></div>
+						<div class="tag interest-tag">Yoga <span>x</span></div>
+						<div class="tag interest-tag">CrossFit <span>x</span></div>
+						<div class="tag interest-tag">Tea <span>x</span></div>
+						<div class="tag interest-tag">Meditation <span>x</span></div>
+						<div class="tag interest-tag">Dancing <span>x</span></div>
+						<div class="tag interest-tag">Coffee <span>x</span></div>
+					</div>
+				</div>
+				<div class="my-profile-select">
+					<label class="category-label">Category</label>
+					<div class="my-profile-right-cat">
+						<div class="sel-custom selector">
+							<select class="customized-select">
+								<option value="0">Sports</option>
+								<option value="1">Yoga</option>
+								<option value="2">Cooking</option>
+							</select>
+						</div>
+						<button class="btn btn-primary form-btn-right one">Add INTEREST</button>
+					</div>					
+				</div>
+				<h2 class="section-title my-profile">Dietary preferences</h2>
+				<div class="">
+					<div class="wrap-interests-tags col-12">
+						<div class="tag interest-tag">Tea</div>
+						<div class="tag interest-tag">Meditation</div>
+						<div class="tag interest-tag">Dancing</div>
+						<div class="tag interest-tag">Coffee</div>						
+					</div>
+				</div>
+				<div class="my-profile-select">
+					<label class="category-label">Diet/lifestyle</label>
+					<div class="my-profile-right-cat">
+						<div class="sel-custom selector">
+							<select class="customized-select">
+								<option value="0">Vegetarian</option>
+								<option value="1">Mediterranean</option>
+								<option value="2">Paleo</option>
+							</select>
+						</div>							
+						<button class="btn btn-primary form-btn-right two">Add DIET</button>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section section-pvlses my-profile-settings">
+	<div class="container">
+		<h2 class="section-title my-profile">My profile settings</h2>
+		<div class="row row-form">
+			<div class="col-12 col-sm-12 col-md-6 col-lg-6 my-profile-left">
+				<form class="user-info">
+					<div class="item">
+						<label>Email <span>*</span></label>
+						<input class="form-control" value="" placeholder="name@email.com" type="text" required/>
+					</div>
+					<div class="item">
+						<label>Full Name <span>*</span></label>
+						<input class="form-control" value="" placeholder="Full Name" type="text" required/>
+					</div>
+					<div class="item-complex row">
+						<div class="piece col-12 col-sm-12 col-md-4">
+							<label>Birthday</label>
+							<input type="text" class="form-control datetimepicker-input" id="datetimepicker1" data-toggle="datetimepicker" data-target="#datetimepicker1" placeholder="dd/mm/yyyy" required/>
+						</div>
+						<div class="piece col-12 col-sm-12 col-md-4">
+							<label>Mobile</label>
+							<input class="form-control" value="+40 771 010 286" type="text" required/>
+						</div>
+						<div class="piece-btn col-12 col-sm-12 col-md-4">
+							<button class="btn btn-primary form-btn-right">UPDATE</button>
+						</div>						
+					</div>
+					<div class="item comment">
+						Only your name will be publicly displayed
+					</div>
+				</form>
+			</div>
+			<div class="col-12 col-sm-12 col-md-6 col-lg-6 my-profile-right">
+				<form class="password">
+					<div class="item">
+						<label>New Password <span class="required">*</span></label>
+						<input class="form-control" value="" placeholder="New password" type="password" required/>
+					</div>
+					<div class="item">
+						<label>Repeat Password <span class="required">*</span></label>
+						<input class="form-control" value="" type="password" required/>
+					</div>
+					<div class="item">
+						<button class="btn btn-primary form-btn-right">CHANGE</button>
+					</div>
+				</form>
+			</div>
+		</div>		
+	</div>
+</section>
+<section class="section section-pvlses">
+	<div class="container">		
+		<div class="row row-form">
+			<div class="col-12 col-sm-12 col-md-6 col-lg-6 my-profile-left">
+				<h2 class="section-title my-profile">Video</h2>
+				<input type="file" name="video" class="video-choose">
+				<div class="video-part">					
+				</div>
+				<div class="video-upload">
+					<button class="btn btn-primary form-btn-right">UPLOAD</button>
+				</div>
+			</div>
+			<div class="col-12 col-sm-12 col-md-6 col-lg-6 my-profile-right">
+				<h2 class="section-title my-profile">Gallery Photos</h2>
+				<div class="multi-gallery">
+					<div class="row gallery">
+						<div class="col-12 col-md-8">
+							<div id="upload-main">
+								<div class="symbol-change"><span class="symbol-x">X</span></div>
+								<input type="file" class="main">
+							</div>	
+						</div>
+						<div class="col-12 col-md-4">
+							<div class="row side-gallery">
+								<div class="crop-part col-6 col-md-12">
+									<div id="upload-for">
+										<div class="symbol-change"><span class="symbol-x">X</span></div>
+										<input type="file" class="forth">
+									</div>
+								</div>
+								<div class="crop-part col-6 col-md-12 right-cell">
+									<div id="upload-fif">
+										<div class="symbol-change"><span class="symbol-x">X</span></div>
+										<input type="file" class="fifth">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row gallery">					
+						<div class="col-6 col-md-4">
+							<div class="crop-part cell">
+								<div id="upload-fst">
+									<div class="symbol-change"><span class="symbol-x">X</span></div>
+									<input type="file" class="first">
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-md-4">
+							<div class="crop-part">
+								<div id="upload-snd">
+									<div class="symbol-change"><span class="symbol-x">X</span></div>
+									<input type="file" class="second">
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-md-4">
+							<div class="crop-part">
+								<div id="upload-trd">
+									<div class="symbol-change"><span class="symbol-x">X</span></div>
+									<input type="file" class="third">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 gallery-bottom">
+						<button class="btn form-btn-right gallery-upload-btn">
+							UPLOAD
+						</button>
+					</div>
+				</div><!----multi gallery ---->
+			</div>
+		</div>		
+	</div>
+</section>
+<section class="section section-pvlses privacy">
+	<div class="container">
+		<h2 class="section-title my-profile privacy-settings">Privacy settings</h2>
+		<div class="manage-notification">
+			<button class="notification-btn btn">MANAGE NOTIFICATION PREFERENCES</button>
+		</div>
+		<div class="row row-form">
+			<div class="col-12">
+				<a href="profile.html" class="preview-link">Preview public-profile</a>
+			</div>
+			<div class="col-12">
+				<a href="index.html" class="deactivate-link">x Deactivate profile</a>
+			</div>
+		</div>
+	</div>	
+</section>
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 footer-links">
+				<div class="text-center">
+					© 2020 PVLSE - All rights reserved
+				</div>
+				<a data-toggle="modal" data-target="#modalPrivacy" class="link">Privacy Policy</a>
+				<a data-toggle="modal" data-target="#termsModal" class="link">Community Guidelines</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="logout-part">
+	<div class="box">
+		<div class="close">×</div>
+		<div class="txt">Are you sure you want to quit?</div>
+		<div class="btns">
+			<button class="cancel-logout btn">CANCEL</button>
+			<button class="do-logout btn">LOG OUT</button>
+		</div>
+	</div>	
+</div>
+<div class="alert-part">
+	<div class="box">
+		<div class="close">×</div>		
+		<div class="notification-part">
+			<div class="txt">Notification</div>
+			<div class="item">
+				<div class="title">Notification channels</div>
+				<div class="line">
+					Email
+					<div class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input check-online" id="alert_email" name="payment-type">
+						<label class="custom-control-label" for="alert_email"></label>
+					</div>
+				</div>
+				<div class="line">
+					Mobile
+					<div class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input check-online" id="alert_mobile" name="payment-type">
+						<label class="custom-control-label" for="alert_mobile"></label>
+					</div>
+				</div>
+				<div class="line">
+					Desktop
+					<div class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input check-online" id="alert_desktop" name="payment-type">
+						<label class="custom-control-label" for="alert_desktop"></label>
+					</div>
+				</div>
+				<div class="line">
+					New class
+					<div class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input check-online" id="alert_newClass" name="payment-type">
+						<label class="custom-control-label" for="alert_newClass"></label>
+					</div>
+				</div>
+				<div class="line">
+					New Message
+					<div class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input check-online" id="alert_newMsg" name="payment-type">
+						<label class="custom-control-label" for="alert_newMsg"></label>
+					</div>
+				</div>
+				<div class="line">
+					Joining pvlses
+					<div class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input check-online" id="alert_joining" name="payment-type">
+						<label class="custom-control-label" for="alert_joining"></label>
+					</div>
+				</div>
+			</div>			
+			<div class="action">
+				<button class="btn save-btn">SAVE</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="receive-msg">
+	<div class="title-bar"><span>Message</span><span class="close">×</span></div>
+	<div class="row">
+		<div class="col-3">
+			<div class="avarta">
+				<img src="img/users/user2.png">
+			</div>
+		</div>
+		<div class="col-6">
+			<p class="name">James</p>
+			<p class="comment">Acroyoga lesson with advanced...</p>
+		</div>
+		<div class="col-3">
+			<button class="reply">REPLY</button>
+		</div>
+	</div>
+</div>
+<div class="new-msg" id="new-msg">
+	<div class="title-bar">
+		<span class="blank">New message</span>
+		<span class="close">×</span>
+		<span class="mini">_</span>
+		<span class="max">□</span>
+	</div>
+	<div class="content">
+		<form>
+			<div class="item">
+				<span>To</span>
+				<input type="text" name="msg_to" />
+			</div>
+			<div class="item">
+				<span>Subject</span>
+				<input type="text" name="msg_subject" />
+			</div>
+			<div class="msg-area">
+				<textarea class="msg-body" rows="5" name="msg-body"></textarea>
+			</div>
+			<div class="action">
+				<button class="send-btn">SEND</button>
+				<span class="del"><img src="img/del.png"></span>
+			</div>
+		</form>		
+	</div>
+</div>
+<script src="js/vendor/jquery-3.3.1.min.js"></script>
+<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="js/vendor/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/vendor/moment.min.js"></script>
+<script type="text/javascript" src="js/vendor/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="js/vendor/daterangepicker.css" />
+
+<script type="text/javascript" src="js/vendor/jquery.datetimepicker.js"></script>
+
+<script type="text/javascript">
+	$(function () {
+		$.datetimepicker.setDateFormatter({
+			parseDate: function (date, format) {
+				var d = moment(date, format);
+				return d.isValid() ? d.toDate() : false;
+			},
+			formatDate: function (date, format) {
+				return moment(date).format(format);
+			},
+		});
+		$('#datetimepicker1').datetimepicker({
+			timepicker: false,
+			format: 'd/m/Y'
+		});
+		// notification button
+		$(".notification-btn").click(function(){
+			$(".alert-part").css("display", "block");
+		});
+		$(".alert-part .close").click(function(){
+			$(".alert-part").css("display", "none");
+		});
+		$(".alert-part .save-btn").click(function(){
+			$(".alert-part").css("display", "none");
+		});
+	});
+</script>
+<script src="js/main.js"></script>
+
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/croppie.js"></script>
+
+<script>
+// top cropping 
+$(document).ready(function(){	
+	// when click crop area, open file
+	$('body').on('click', '#upload-demo .cr-viewport', function () {
+        $(".image").trigger('click');		
+	});
+	$("#upload-demo .symbol-x").click(function(){
+		$(".image").trigger('click');
+	});
+	var img_rect = $("#upload-demo").width();
+	$("textarea").height(img_rect-20);
+	////////////// image upload 
+	var resize = $('#upload-demo').croppie({
+        enableExif: true,
+		enableOrientation: true,
+		enforceBoundary: false,
+        viewport: {
+            width: img_rect,
+			height: img_rect,
+			type: 'rectangle'
+        },
+        boundary: {
+            width: img_rect,
+            height: img_rect
+        }
+    });
+
+    $('.image').on('change', function () {
+		$("#upload-demo .symbol-change").slideDown(700);
+		$("#upload-demo .cr-slider").fadeIn(700);
+		$("#upload-demo .cr-viewport").css({'cssText': 'box-shadow: 0 0 2000px 2000px rgba(0,0,0,0.5) !important' });
+
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            resize.croppie('bind',{
+                url: e.target.result
+            }).then(function(){
+                console.log('jQuery bind complete');
+            });
+        }
+        reader.readAsDataURL(this.files[0]);
+        $(".cr-viewport").css("background", "none");
+	}); 
+	
+	$(".btn-upload-profile").click(function(){
+		//event.preventDefault();
+		var img = $("#upload-demo").find('input[type=file]').val();
+
+		if(img){
+			$("#upload-demo .symbol-change").css("display", "none");
+			$("#upload-demo .cr-slider").css("display", "none");
+		}
+	});
+
+	// when resize window, change width upload window
+	$(window).on('resize', function(){
+		var img_rect = $("#upload-demo").width();
+		$("textarea").height(img_rect-20);
+		$("#upload-demo .cr-boundary").width(img_rect);
+		$("#upload-demo .cr-boundary").height(img_rect);
+		$("#upload-demo .cr-viewport").width(img_rect);
+		$("#upload-demo .cr-viewport").height(img_rect);
+	});	
+});	
+</script>
+<script>
+	// multi cropping 
+	$(document).ready(function(){			
+		// when click crop area, open file
+		$('body').on('click', '#upload-main .cr-viewport', function () {
+			$(".main").trigger('click');
+		});
+		$('body').on('click', '#upload-fst .cr-viewport', function () {
+			$(".first").trigger('click');
+		});
+		$('body').on('click', '#upload-snd .cr-viewport', function () {
+			$(".second").trigger('click');
+		});
+		$('body').on('click', '#upload-trd .cr-viewport', function () {
+			$(".third").trigger('click');
+		});
+		$('body').on('click', '#upload-for .cr-viewport', function () {
+			$(".forth").trigger('click');
+		});
+		$('body').on('click', '#upload-fif .cr-viewport', function () {
+			$(".fifth").trigger('click');
+		});
+		// responsive 
+		var create_gallery_height = $(".cell").width();	
+		$(".map").height(create_gallery_height * 1.8 +20);
+			
+		var main_width = $("#upload-main").width();
+		// window resize event
+		$(window).on('resize', function(){  		
+			create_gallery_height = $(".cell").width();	
+			var main_width = $("#upload-main").width();
+			$("#upload-main .cr-boundary").width(main_width);
+			$("#upload-main .cr-boundary").height(create_gallery_height * 1.2+10);
+			$("#upload-main .cr-viewport").width(main_width);
+			$("#upload-main .cr-viewport").height(create_gallery_height * 1.2+10);
+
+			$("#upload-fst .cr-boundary").width(create_gallery_height);
+			$("#upload-fst .cr-boundary").height(create_gallery_height/5 * 3);
+			$("#upload-fst .cr-viewport").width(create_gallery_height);
+			$("#upload-fst .cr-viewport").height(create_gallery_height/5 * 3);
+	
+			$("#upload-snd .cr-boundary").width(create_gallery_height);
+			$("#upload-snd .cr-boundary").height(create_gallery_height/5 * 3);
+			$("#upload-snd .cr-viewport").width(create_gallery_height);
+			$("#upload-snd .cr-viewport").height(create_gallery_height/5 * 3);
+
+			$("#upload-trd .cr-boundary").width(create_gallery_height);
+			$("#upload-trd .cr-boundary").height(create_gallery_height/5 * 3);
+			$("#upload-trd .cr-viewport").width(create_gallery_height);
+			$("#upload-trd .cr-viewport").height(create_gallery_height/5 * 3);
+
+			$("#upload-for .cr-boundary").width(create_gallery_height);
+			$("#upload-for .cr-boundary").height(create_gallery_height/5 * 3);
+			$("#upload-for .cr-viewport").width(create_gallery_height);
+			$("#upload-for .cr-viewport").height(create_gallery_height/5 * 3);
+
+			$("#upload-fif .cr-boundary").width(create_gallery_height);
+			$("#upload-fif .cr-boundary").height(create_gallery_height/5 * 3);
+			$("#upload-fif .cr-viewport").width(create_gallery_height);
+			$("#upload-fif .cr-viewport").height(create_gallery_height/5 * 3);
+		});
+		// click x symbol
+		$("#upload-main .symbol-x").click(function(){
+			$(".main").trigger('click');
+		});
+		$("#upload-fst .symbol-x").click(function(){
+			$(".first").trigger('click');
+		});
+		$("#upload-snd .symbol-x").click(function(){
+			$(".second").trigger('click');
+		});
+		$("#upload-trd .symbol-x").click(function(){
+			$(".third").trigger('click');
+		});
+		$("#upload-for .symbol-x").click(function(){
+			$(".forth").trigger('click');
+		});
+		$("#upload-fif .symbol-x").click(function(){
+			$(".fifth").trigger('click');
+		});
+		//main gallery	
+		var main = $('#upload-main').croppie({
+			enableExif: true,
+			enableOrientation: true,
+			enforceBoundary: false,
+			viewport: {
+				width: main_width,
+				height:create_gallery_height * 1.2+10,
+				type: 'rectangle'
+			},
+			boundary: {
+				width: main_width,
+				height: create_gallery_height * 1.2+10,
+			}
+		});
+	
+		$('.main').on('change', function () {
+			$("#upload-main .symbol-change").slideDown(1000);
+			$("#upload-main .cr-slider").fadeIn(700);
+			$("#upload-main .cr-viewport").css({'cssText': 'box-shadow: 0 0 2000px 2000px rgba(0,0,0,0.5) !important' });
+			$("#upload-main .cr-viewport").width(main_width - 20);
+			$("#upload-main .cr-viewport").height(create_gallery_height * 1.2 - 10);
+		
+			var reader = new FileReader();
+			reader.onload = function (e) {
+				main.croppie('bind',{
+					url: e.target.result
+				}).then(function(){
+					console.log('jQuery bind complete');
+				});
+			}
+			reader.readAsDataURL(this.files[0]);
+			$("#upload-main .cr-viewport").css("background", "none");
+		}); 
+	
+		//first gallery
+		var first = $('#upload-fst').croppie({
+			enableExif: true,
+			enableOrientation: true,
+			enforceBoundary: false,
+			viewport: {
+				width: create_gallery_height,
+				height: create_gallery_height/5 *3,
+				type: 'rectangle'
+			},
+			boundary: {
+				width: create_gallery_height,
+				height: create_gallery_height/5 * 3,
+			}
+		});
+	
+		$('.first').on('change', function () {
+			$("#upload-fst .symbol-change").slideDown(700);
+			$("#upload-fst .cr-slider").fadeIn(700);
+			
+			var reader = new FileReader();
+			reader.onload = function (e) {
+				first.croppie('bind',{
+					url: e.target.result
+				}).then(function(){
+					console.log('jQuery bind complete');
+				});
+			}
+			reader.readAsDataURL(this.files[0]);
+			$("#upload-fst .cr-viewport").css("background", "none");
+		}); 
+		
+		//second gallery
+		var second = $('#upload-snd').croppie({
+			enableExif: true,
+			enableOrientation: true,
+			enforceBoundary: false,
+			viewport: {
+				width: create_gallery_height,
+				height: create_gallery_height/5 * 3,
+				type: 'rectangle'
+			},
+			boundary: {
+				width: create_gallery_height,
+				height: create_gallery_height/5 * 3,
+			}
+		});
+	
+		$('.second').on('change', function () {
+			$("#upload-snd .symbol-change").slideDown(700);
+			$("#upload-snd .cr-slider").fadeIn(700);
+			
+			var reader = new FileReader();
+			reader.onload = function (e) {
+				second.croppie('bind',{
+					url: e.target.result
+				}).then(function(){
+					console.log('jQuery bind complete');
+				});
+			}
+			reader.readAsDataURL(this.files[0]);
+			$("#upload-snd .cr-viewport").css("background", "none");
+		}); 
+	
+		//third gallery
+		var third = $('#upload-trd').croppie({
+			enableExif: true,
+			enableOrientation: true,
+			enforceBoundary: false,
+			viewport: {
+				width: create_gallery_height,
+				height: create_gallery_height/5 * 3,
+				type: 'rectangle'
+			},
+			boundary: {
+				width: create_gallery_height,
+				height: create_gallery_height/5 * 3,
+			}
+		});
+	
+		$('.third').on('change', function () {
+			$("#upload-trd .symbol-change").slideDown(700);
+			$("#upload-trd .cr-slider").fadeIn(700);
+			
+			var reader = new FileReader();
+			reader.onload = function (e) {
+				third.croppie('bind',{
+					url: e.target.result
+				}).then(function(){
+					console.log('jQuery bind complete');
+				});
+			}
+			reader.readAsDataURL(this.files[0]);
+			$("#upload-trd .cr-viewport").css("background", "none");
+		}); 
+		//forth gallery
+		var forth = $('#upload-for').croppie({
+			enableExif: true,
+			enableOrientation: true,
+			enforceBoundary: false,
+			viewport: {
+				width: create_gallery_height,
+				height: create_gallery_height/5 * 3,
+				type: 'rectangle'
+			},
+			boundary: {
+				width: create_gallery_height,
+				height: create_gallery_height/5 * 3,
+			}
+		});
+	
+		$('.forth').on('change', function () {
+			$("#upload-for .symbol-change").slideDown(700);
+			$("#upload-for .cr-slider").fadeIn(700);
+			
+			var reader = new FileReader();
+			reader.onload = function (e) {
+				forth.croppie('bind',{
+					url: e.target.result
+				}).then(function(){
+					console.log('jQuery bind complete');
+				});
+			}
+			reader.readAsDataURL(this.files[0]);
+			$("#upload-for .cr-viewport").css("background", "none");
+		}); 
+		//fifth gallery
+		var fifth = $('#upload-fif').croppie({
+			enableExif: true,
+			enableOrientation: true,
+			enforceBoundary: false,
+			viewport: {
+				width: create_gallery_height,
+				height: create_gallery_height/5 * 3,
+				type: 'rectangle'
+			},
+			boundary: {
+				width: create_gallery_height,
+				height: create_gallery_height/5 * 3,
+			}
+		});
+	
+		$('.fifth').on('change', function () {
+			$("#upload-fif .symbol-change").slideDown(700);
+			$("#upload-fif .cr-slider").fadeIn(700);
+			
+			var reader = new FileReader();
+			reader.onload = function (e) {
+				fifth.croppie('bind',{
+					url: e.target.result
+				}).then(function(){
+					console.log('jQuery bind complete');
+				});
+			}
+			reader.readAsDataURL(this.files[0]);
+			$("#upload-fif .cr-viewport").css("background", "none");
+		}); 
+	});
+</script>
+
+<script>
+	// video upload
+	$(document).ready(function(){
+		var video_height = $(".video-part").width()/16 * 9;
+		$(".video-part").height(video_height);
+		
+		$(".video-part").click(function(){
+			$(".video-choose").trigger('click');			
+		});
+
+		$('.video-choose').change( function(event) {
+			$('.video-part').empty();
+			var tmppath = URL.createObjectURL(event.target.files[0]);
+			$('.video-part').append('<video controls><source src="'+tmppath+'" type="video/mp4">Your browser does not support HTML video.</video>');
+		});
+	});
+
+</script>
+</body>
+</html>

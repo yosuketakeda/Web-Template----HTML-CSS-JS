@@ -1,0 +1,521 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>PVLSE | Wallet</title>
+	<meta name="description" content="PVLSE - Wallet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Place favicon.ico in the root directory -->
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+	<link rel="icon" href="favicon.png" type="image/x-icon"/>
+	<link rel="stylesheet" href="sass/all-fontawesome.min.css">
+	<link rel="stylesheet" href="sass/screen.css">
+</head>
+
+<body class="page category">
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+	your browser</a> to improve your experience and security.</p>
+<![endif]-->
+<header>
+	<nav>
+		<div class="container container-top">
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title>
+						<path stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+				</span>
+			</button>
+			<a href="index.html" class="logo">
+				<img src="img/logo.svg" alt=""/>
+			</a>
+			<div class="navbar row" id="navbar">
+				<div class="col-12 col-sm-12 col-md-8 col-lg-8 nav-menu-left">
+					<span>
+						<span class="nav-link nav-link-install-text">Install app</span>
+						<a href="https://apps.apple.com/us/app/pvlse/id1409396043" class="nav-link nav-icon apple"></a>
+						<a href="https://play.google.com/store/apps/details?id=com.thepvlse.app&hl=en" class="nav-link nav-icon google-play"></a>
+					</span>
+				</div>
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 nav-menu-right">
+					<a href="create-pvlse.html" class="nav-link nav-create">+CREATE</a>
+					<a href="wishlist.html" class="nav-link nav-icon wishlist"></a>
+					<a href="#" class="nav-link nav-icon inbox"></a>
+					<div class="dropdown dropdown-account">
+						<a href="#" class="nav-link nav-account selected" data-toggle="dropdown" aria-expanded="false">
+							<img src="img/users/user1.png" alt="" class="nav-avatar"/>
+						</a>
+						<div class="dropdown-menu dropdown-toggle-admin" id="dropdown-toggle-admin">
+							<a href="my-profile.html" class="dropdown-nav-link">
+								My profile
+							</a>
+							<a href="dashboard.html" class="dropdown-nav-link">
+								Dashboard
+							</a>
+							<a href="#" class="dropdown-nav-link active">
+								Wallet
+							</a>
+							<a href="payments.html" class="dropdown-nav-link">
+								Payments & Cashout
+							</a>
+							<a href="joined-pvlses.html" class="dropdown-nav-link">
+								Joined pvlses <span>(9 upcoming)</span>
+							</a>
+							<a href="created-pvlses.html" class="dropdown-nav-link">
+								Created pvlses <span>(12 upcoming)</span>
+							</a>
+							<!--<a href="index.html" class="dropdown-nav-link">
+								Log Out
+							</a>-->
+							<button class="logout-btn">Log Out</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>
+<section class="section section-pvlses">
+	<div class="container">
+		<div class="section-wrap-titles">
+			<div class="breadcrumb-pvlses">
+				<a href="index.html" class="breadcrumb-item">
+					My account
+				</a>
+				<div class="breadcrumb-sep">/</div>
+				<div>Wallet</div>
+			</div>
+		</div>
+		<div class="row row-form">
+			<div class="col-12">
+				<h2 class="section-title section-title-account">Wallet</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-walett col-walett-left">
+				<div class="card">
+					<div class="number-important">£ 956,21</div>
+					<div class="wallet-wrap-buttons">
+						<div>
+							<a data-toggle="modal" data-target="#walettModalCashout" href="#" class="btn btn-primary">CASHOUT</a>
+						</div>
+						<div>
+							<a data-toggle="modal" data-target="#walettModal" href="#" class="btn btn-primary">ADD MONEY</a>
+						</div>						
+					</div>
+					<a href="dashboard.html" class="link-see-more">See more analytics in the dashboard</a>
+				</div>
+				<div class="card">
+					<div class="table-row table-row-head">
+						<div>Totals</div>
+						<div>
+							<select class="form-control custom-select">
+								<option>This month</option>
+							</select>
+						</div>
+					</div>
+					<div class="table-row">
+						<div>Spent</div>
+						<div>£ 780</div>
+					</div>
+					<div class="table-row">
+						<div>Received</div>
+						<div>£ 1346</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-12 col-md-6 col-lg-8 col-walett col-walett-right">
+				<div class="card table table-wallet-right">
+					<div class="table-wallet-section">
+						<div class="row table-wallet-row table-wallet-row-head">
+							<div class="col-6 table-wallet-row-left">
+								11 February
+							</div>
+							<div class="col-6 table-wallet-row-right minus">
+								- £ 50
+							</div>
+						</div>
+						<div class="row table-wallet-row">
+							<div class="col-1 table-wallet-row-left">
+								<i class="operation-icon transfer-sent"></i>
+							</div>
+							<div class="col-8 table-wallet-row-description">
+								<p class="description">To Yoga center LMT, Yoga meeting</p>
+								<p class="date">13:42</p>
+							</div>
+							<div class="col-3 table-wallet-row-right minus">
+								- £ 150
+							</div>
+						</div>
+						<div class="row table-wallet-row">
+							<div class="col-1 table-wallet-row-left">
+								<i class="operation-icon top-up"></i>
+							</div>
+							<div class="col-8 table-wallet-row-description">
+								<p class="description">Top-Up by *7156</p>
+								<p class="date">13:42</p>
+							</div>
+							<div class="col-3 table-wallet-row-right transfer">
+								+ £ 100
+							</div>
+						</div>
+					</div>
+
+					<div class="table-wallet-section">
+						<div class="row table-wallet-row table-wallet-row-head">
+							<div class="col-6 table-wallet-row-left">
+								7 February
+							</div>
+							<div class="col-6 table-wallet-row-right minus">
+								- £ 50
+							</div>
+						</div>
+						<div class="row table-wallet-row">
+							<div class="col-1 table-wallet-row-left">
+								<i class="operation-icon transfer-received"></i>
+							</div>
+							<div class="col-8 table-wallet-row-description">
+								<p class="description">From David Brown for Yoga class</p>
+								<p class="date">15:22</p>
+							</div>
+							<div class="col-3 table-wallet-row-right plus">
+								+ £ 35
+							</div>
+						</div>
+						<div class="row table-wallet-row">
+							<div class="col-1 table-wallet-row-left">
+								<i class="operation-icon withdraw"></i>
+							</div>
+							<div class="col-8 table-wallet-row-description">
+								<p class="description">Withdraw on *7156</p>
+								<p class="date">13:42</p>
+							</div>
+							<div class="col-3 table-wallet-row-right transfer">
+								+ £ 100
+							</div>
+						</div>
+						<div class="row table-wallet-row">
+							<div class="col-1 table-wallet-row-left">
+								<i class="operation-icon transfer-received"></i>
+							</div>
+							<div class="col-8 table-wallet-row-description">
+								<p class="description">From David Brown for Yoga class</p>
+								<p class="date">15:22</p>
+							</div>
+							<div class="col-3 table-wallet-row-right plus">
+								+ £ 35
+							</div>
+						</div>
+						<div class="row table-wallet-row">
+							<div class="col-1 table-wallet-row-left">
+								<i class="operation-icon transfer-received"></i>
+							</div>
+							<div class="col-8 table-wallet-row-description">
+								<p class="description">From David Brown for Yoga class</p>
+								<p class="date">15:22</p>
+							</div>
+							<div class="col-3 table-wallet-row-right plus">
+								+ £ 35
+							</div>
+						</div>
+
+					</div>
+
+					<div class="table-wallet-section">
+						<div class="row table-wallet-row table-wallet-row-head">
+							<div class="col-6 table-wallet-row-left">
+								3 February
+							</div>
+							<div class="col-6 table-wallet-row-right minus">
+								- £ 50
+							</div>
+						</div>
+						<div class="row table-wallet-row">
+							<div class="col-1 table-wallet-row-left">
+								<i class="operation-icon transfer-sent"></i>
+							</div>
+							<div class="col-8 table-wallet-row-description">
+								<p class="description">To Yoga center LMT, Yoga meeting</p>
+								<p class="date">13:42</p>
+							</div>
+							<div class="col-3 table-wallet-row-right minus">
+								- £ 150
+							</div>
+						</div>
+						<div class="row table-wallet-row">
+							<div class="col-1 table-wallet-row-left">
+								<i class="operation-icon top-up"></i>
+							</div>
+							<div class="col-6 table-wallet-row-description">
+								<p class="description">Top-Up by *7156</p>
+								<p class="date">13:42</p>
+							</div>
+							<div class="col-5 table-wallet-row-right transfer">
+								+ £ 100
+							</div>
+						</div>
+						<div class="row table-wallet-row">
+							<div class="col-1 table-wallet-row-left">
+								<i class="operation-icon transfer-received"></i>
+							</div>
+							<div class="col-8 table-wallet-row-description">
+								<p class="description">From David Brown for Yoga class</p>
+								<p class="date">15:22</p>
+							</div>
+							<div class="col-3 table-wallet-row-right plus">
+								+ £ 35
+							</div>
+						</div>
+						<div class="row table-wallet-row">
+							<div class="col-1 table-wallet-row-left">
+								<i class="operation-icon transfer-sent"></i>
+							</div>
+							<div class="col-8 table-wallet-row-description">
+								<p class="description">To David Brown</p>
+								<p class="date">15:22</p>
+							</div>
+							<div class="col-3 table-wallet-row-right minus">
+								- £ 35
+							</div>
+						</div>
+					</div>
+
+					<div class="table-wallet-section">
+						<div class="row table-wallet-row table-wallet-row-head">
+							<div class="col-6 table-wallet-row-left">
+								3 February
+							</div>
+							<div class="col-6 table-wallet-row-right minus">
+								- £ 50
+							</div>
+						</div>
+						<div class="row table-wallet-row">
+							<div class="col-1 table-wallet-row-left">
+								<i class="operation-icon transfer-sent"></i>
+							</div>
+							<div class="col-8 table-wallet-row-description">
+								<p class="description">To Yoga center LMT, Yoga meeting</p>
+								<p class="date">13:42</p>
+							</div>
+							<div class="col-3 table-wallet-row-right minus">
+								- £ 150
+							</div>
+						</div>
+						<div class="row table-wallet-row">
+							<div class="col-1 table-wallet-row-left">
+								<i class="operation-icon top-up"></i>
+							</div>
+							<div class="col-6 table-wallet-row-description">
+								<p class="description">Top-Up by *7156</p>
+								<p class="date">13:42</p>
+							</div>
+							<div class="col-5 table-wallet-row-right transfer">
+								+ £ 100
+							</div>
+						</div>
+						<div class="row table-wallet-row">
+							<div class="col-1 table-wallet-row-left">
+								<i class="operation-icon transfer-received"></i>
+							</div>
+							<div class="col-8 table-wallet-row-description">
+								<p class="description">From David Brown for Yoga class</p>
+								<p class="date">15:22</p>
+							</div>
+							<div class="col-3 table-wallet-row-right plus">
+								+ £ 35
+							</div>
+						</div>
+						<div class="row table-wallet-row">
+							<div class="col-1 table-wallet-row-left">
+								<i class="operation-icon transfer-sent"></i>
+							</div>
+							<div class="col-8 table-wallet-row-description">
+								<p class="description">To David Brown</p>
+								<p class="date">15:22</p>
+							</div>
+							<div class="col-3 table-wallet-row-right minus">
+								- £ 35
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="modal fade walett-modal" id="walettModal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<div class="clearfix"></div>
+			</div>
+			<div class="modal-body">
+				<h1 class="modal-title">Add money</h1>
+				<form>
+					<div class="row row-form row-top-add-money">
+						<div class="col-6">
+							<select class="form-control custom-select">
+								<option value="0">GBP</option>
+								<option value="1">EUR</option>
+								<option value="2">USD</option>
+							</select>
+						</div>
+						<div class="col-6">
+							<input class="form-control" type="text" />
+						</div>
+					</div>
+					<div class="row row-form row-bank">
+						<div class="col-8">
+							<div class="wrap-payment-card">
+								<div class="payment-card-icon"></div>
+								<div class="payment-card-det">
+									<div class="payment-card-det-name">ING Bank N.V.</div>
+									<div>VISA *0156</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="payment-card-links float-right">
+								<a href="#">Change</a>
+							</div>
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-lg-12 col-xs-12">
+							<a href="my-profile.html" class="btn btn-primary">Add money</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade walett-modal" id="walettModalCashout" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<div class="clearfix"></div>
+			</div>
+			<div class="modal-body">
+				<h1 class="modal-title">Cashout</h1>
+				<form>
+					<div class="row row-form row-top-add-money">
+						<div class="col-6">
+							<select class="form-control custom-select">
+								<option value="0">GBP</option>
+								<option value="1">EUR</option>
+								<option value="2">USD</option>
+							</select>
+						</div>
+						<div class="col-6">
+							<input class="form-control" type="text" />
+						</div>
+					</div>
+					<div class="row row-form row-bank">
+						<div class="col-8">
+							<div class="wrap-payment-card">
+								<div class="payment-card-det">
+									<div class="payment-card-det-name">Paypal</div>
+									<div>anniesmith@gmail.com</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="payment-card-links float-right">
+								<a href="#">Change</a>
+							</div>
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-lg-12 col-xs-12">
+							<a href="my-profile.html" class="btn btn-primary">withdraw</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 footer-links">
+				<div class="text-center">
+					© 2020 PVLSE - All rights reserved
+				</div>
+				<a data-toggle="modal" data-target="#modalPrivacy" class="link">Privacy Policy</a>
+				<a data-toggle="modal" data-target="#termsModal" class="link">Community Guidelines</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="logout-part">
+	<div class="box">
+		<div class="close">×</div>
+		<div class="txt">Are you sure you want to quit?</div>
+		<div class="btns">
+			<button class="cancel-logout btn">CANCEL</button>
+			<button class="do-logout btn">LOG OUT</button>
+		</div>
+	</div>	
+</div>
+<div class="receive-msg">
+	<div class="title-bar"><span>Message</span><span class="close">×</span></div>
+	<div class="row">
+		<div class="col-3">
+			<div class="avarta">
+				<img src="img/users/user2.png">
+			</div>
+		</div>
+		<div class="col-6">
+			<p class="name">James</p>
+			<p class="comment">Acroyoga lesson with advanced...</p>
+		</div>
+		<div class="col-3">
+			<button class="reply">REPLY</button>
+		</div>
+	</div>
+</div>
+<div class="new-msg" id="new-msg">
+	<div class="title-bar">
+		<span class="blank">New message</span>
+		<span class="close">×</span>
+		<span class="mini">_</span>
+		<span class="max">□</span>
+	</div>
+	<div class="content">
+		<form>
+			<div class="item">
+				<span>To</span>
+				<input type="text" name="msg_to" />
+			</div>
+			<div class="item">
+				<span>Subject</span>
+				<input type="text" name="msg_subject" />
+			</div>
+			<div class="msg-area">
+				<textarea class="msg-body" rows="5" name="msg-body"></textarea>
+			</div>
+			<div class="action">
+				<button class="send-btn">SEND</button>
+				<span class="del"><img src="img/del.png"></span>
+			</div>
+		</form>		
+	</div>
+</div>
+<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="js/vendor/jquery-3.3.1.min.js"></script>
+<script src="js/vendor/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/vendor/moment.min.js"></script>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

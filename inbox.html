@@ -1,0 +1,499 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>PVLSE | Inbox</title>
+	<meta name="description" content="PVLSE - Wishlist">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Place favicon.ico in the root directory -->
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+	<link rel="icon" href="favicon.png" type="image/x-icon"/>
+	
+	<link rel="stylesheet" href="sass/jquery-ui.min.css">
+	<link rel="stylesheet" href="sass/all-fontawesome.min.css">	
+	<link rel="stylesheet" href="sass/screen.css">
+</head>
+
+<body class="page inbox">
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+	your browser</a> to improve your experience and security.</p>
+<![endif]-->
+<header>
+	<nav>
+		<div class="container container-top">
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title>
+						<path stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+				</span>
+			</button>
+			<a href="index.html" class="logo">
+				<img src="img/logo.svg" alt=""/>
+			</a>
+			<div class="navbar row" id="navbar">
+				<div class="col-12 col-sm-12 col-md-8 col-lg-8 nav-menu-left">
+					<span>
+						<span class="nav-link nav-link-install-text">Install app</span>
+						<a href="https://apps.apple.com/us/app/pvlse/id1409396043" class="nav-link nav-icon apple"></a>
+						<a href="https://play.google.com/store/apps/details?id=com.thepvlse.app&hl=en" class="nav-link nav-icon google-play"></a>
+					</span>
+				</div>
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 nav-menu-right">
+					<a href="create-pvlse.html" class="nav-link nav-create">+CREATE</a>
+					<a href="wishlist.html" class="nav-link nav-icon wishlist"></a>
+					<a href="#" class="nav-link nav-icon inbox"></a>
+					<div class="dropdown dropdown-account">
+						<a href="#" class="nav-link nav-account selected" data-toggle="dropdown" aria-expanded="false">
+							<img src="img/users/user1.png" alt="" class="nav-avatar"/>
+						</a>
+						<div class="dropdown-menu dropdown-toggle-admin" id="dropdown-toggle-admin">
+							<a href="my-profile.html" class="dropdown-nav-link">
+								My profile
+							</a>
+							<a href="dashboard.html" class="dropdown-nav-link">
+								Dashboard
+							</a>
+							<a href="wallet.html" class="dropdown-nav-link">
+								Wallet
+							</a>
+							<a href="payments.html" class="dropdown-nav-link">
+								Payments & Cashout
+							</a>
+							<a href="joined-pvlses.html" class="dropdown-nav-link">
+								Joined pvlses <span>(9 upcoming)</span>
+							</a>
+							<a href="created-pvlses.html" class="dropdown-nav-link">
+								Created pvlses <span>(12 upcoming)</span>
+							</a>
+							<button class="logout-btn">Log Out</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>
+<section class="section section-pvlses">
+	<div class="container">
+		<div class="section-wrap-titles">
+			<div class="breadcrumb-pvlses">
+				<a href="index.html" class="breadcrumb-item">
+					My account
+				</a>
+				<div class="breadcrumb-sep">/</div>
+				<div>Messages</div>
+			</div>
+			<div class="row row-top-inbox">
+				<div class="col-6">
+					<h1 class="section-title section-title-main">Inbox</h1>
+				</div>
+				<div class="col-6">
+					<a href="#" class="btn btn-primary form-btn-right" data-toggle="modal" data-target="#messageModal" href="#">New message</a>
+				</div>
+			</div>
+			<div class="row ">
+				<div class="col-6">
+					
+				</div>
+				<div class="col-6">
+					
+				</div>
+			</div>
+			<div class="row row-wrap-messages">
+				<div class="col-12 card wrap-messages">
+					<div class="row row-message-inbox">
+						<div class="col-12 col-sm-3 col-md-2">
+							<div class="wrap-img-user-inbox">
+								<img class="img-user-inbox" src="img/users/david.png" alt="" />
+							</div>
+						</div>
+						<div class="col-12 col-sm-3 col-md-2">
+							<div class="wrap-det">
+								<p>from: <a href="profile.html">David</a></p>
+								<p class="date">10 Jan 2020</p>
+								<p class="status">received</p>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-8">
+							<div class="wrap-det-right">
+								<p>pvlse: <a href="details-page.html">Acroyoga lesson with advanced poses and photography</a></p>
+								<p class="message-body message-body-preview" id="message-body1">
+								Hi Marie. I wanted to personal thank you for the experience. My favorite lesson during Acroyoga was the distinction between lunar and solar energies and how they both relax and activate our bodies. My girlfriend and I left this…
+								Hi Marie. I wanted to personal thank you for the experience. My favorite lesson during Acroyoga was the distinction between lunar and solar energies and how they both relax and activate our bodies. My girlfriend and I left this…
+								</p>
+								<span class="btn-more" id="collapse-b1"></span>
+							</div>
+						</div>
+					</div>
+					<div class="row row-message-inbox">
+						<div class="col-12 col-sm-3 col-md-2">
+							<div class="wrap-img-user-inbox">
+								<img class="img-user-inbox" src="img/users/david.png" alt="" />
+							</div>
+						</div>
+						<div class="col-12 col-sm-3 col-md-2">
+							<div class="wrap-det">
+								<p>from: <a href="profile.html">David</a></p>
+								<p class="date">10 Jan 2020</p>
+								<p class="status">received</p>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-8">
+							<div class="wrap-det-right">
+								<p>pvlse: <a href="details-page.html">Acroyoga lesson with advanced poses and photography</a></p>
+								<p class="message-body message-body-preview" id="message-body2">
+									Hi Marie. I wanted to personal thank you for the experience. My favorite lesson during Acroyoga was the distinction between lunar and solar energies and how they both relax and activate our bodies. My girlfriend and I left this…
+									Hi Marie. I wanted to personal thank you for the experience. My favorite lesson during Acroyoga was the distinction between lunar and solar energies and how they both relax and activate our bodies. My girlfriend and I left this…
+								</p>
+								<span class="btn-more" id="collapse-b2"></span>
+							</div>
+						</div>
+					</div>
+					<div class="row row-message-inbox">
+						<div class="col-12 col-sm-3 col-md-2">
+							<div class="wrap-img-user-inbox">
+								<img class="img-user-inbox" src="img/users/david.png" alt="" />
+							</div>
+						</div>
+						<div class="col-12 col-sm-3 col-md-2">
+							<div class="wrap-det">
+								<p>from: <a href="profile.html">David</a></p>
+								<p class="date">10 Jan 2020</p>
+								<p class="status">received</p>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-8">
+							<div class="wrap-det-right">
+								<p>pvlse: <a href="details-page.html">Acroyoga lesson with advanced poses and photography</a></p>
+								<p class="message-body message-body-preview" id="message-body3">
+									Hi Marie. I wanted to personal thank you for the experience. My favorite lesson during Acroyoga was the distinction between lunar and solar energies and how they both relax and activate our bodies. My girlfriend and I left this…
+									Hi Marie. I wanted to personal thank you for the experience. My favorite lesson during Acroyoga was the distinction between lunar and solar energies and how they both relax and activate our bodies. My girlfriend and I left this…
+								</p>
+								<span class="btn-more" id="collapse-b3"></span>
+							</div>
+						</div>
+					</div>
+					<div class="row row-message-inbox">
+						<div class="col-12 col-sm-3 col-md-2">
+							<div class="wrap-img-user-inbox">
+								<img class="img-user-inbox" src="img/users/david.png" alt="" />
+							</div>
+						</div>
+						<div class="col-12 col-sm-3 col-md-2">
+							<div class="wrap-det">
+								<p>from: <a href="profile.html">David</a></p>
+								<p class="date">10 Jan 2020</p>
+								<p class="status">received</p>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-8">
+							<div class="wrap-det-right">
+								<p>pvlse: <a href="details-page.html">Acroyoga lesson with advanced poses and photography</a></p>
+								<p class="message-body message-body-preview" id="message-body4">
+									Hi Marie. I wanted to personal thank you for the experience. My favorite lesson during Acroyoga was the distinction between lunar and solar energies and how they both relax and activate our bodies. My girlfriend and I left this…
+									Hi Marie. I wanted to personal thank you for the experience. My favorite lesson during Acroyoga was the distinction between lunar and solar energies and how they both relax and activate our bodies. My girlfriend and I left this…
+								</p>
+								<span class="btn-more" id="collapse-b4"></span>
+							</div>
+						</div>
+					</div>
+					<div class="row row-message-inbox">
+						<div class="col-12 col-sm-3 col-md-2">
+							<div class="wrap-img-user-inbox">
+								<img class="img-user-inbox" src="img/users/david.png" alt="" />
+							</div>
+						</div>
+						<div class="col-12 col-sm-3 col-md-2">
+							<div class="wrap-det">
+								<p>from: <a href="profile.html">David</a></p>
+								<p class="date">10 Jan 2020</p>
+								<p class="status">received</p>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-8">
+							<div class="wrap-det-right">
+								<p>pvlse: <a href="details-page.html">Acroyoga lesson with advanced poses and photography</a></p>
+								<p class="message-body message-body-preview" id="message-body5">
+									Hi Marie. I wanted to personal thank you for the experience. My favorite lesson during Acroyoga was the distinction between lunar and solar energies and how they both relax and activate our bodies. My girlfriend and I left this…
+									Hi Marie. I wanted to personal thank you for the experience. My favorite lesson during Acroyoga was the distinction between lunar and solar energies and how they both relax and activate our bodies. My girlfriend and I left this…
+								</p>
+								<span class="btn-more" id="collapse-b5"></span>
+							</div>
+						</div>
+					</div>
+					<div class="row row-message-inbox">
+						<div class="col-12 col-sm-3 col-md-2">
+							<div class="wrap-img-user-inbox">
+								<img class="img-user-inbox" src="img/users/david.png" alt="" />
+							</div>
+						</div>
+						<div class="col-12 col-sm-3 col-md-2">
+							<div class="wrap-det">
+								<p>from: <a href="profile.html">David</a></p>
+								<p class="date">10 Jan 2020</p>
+								<p class="status">received</p>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-8">
+							<div class="wrap-det-right">
+								<p>pvlse: <a href="details-page.html">Acroyoga lesson with advanced poses and photography</a></p>
+								<p class="message-body message-body-preview" id="message-body6">
+									Hi Marie. I wanted to personal thank you for the experience. My favorite lesson during Acroyoga was the distinction between lunar and solar energies and how they both relax and activate our bodies. My girlfriend and I left this…
+									Hi Marie. I wanted to personal thank you for the experience. My favorite lesson during Acroyoga was the distinction between lunar and solar energies and how they both relax and activate our bodies. My girlfriend and I left this…
+								</p>
+								<span class="btn-more" id="collapse-b6"></span>
+							</div>
+						</div>
+					</div>
+					<div class="row row-message-inbox">
+						<div class="col-12 col-sm-3 col-md-2">
+							<div class="wrap-img-user-inbox">
+								<img class="img-user-inbox" src="img/users/david.png" alt="" />
+							</div>
+						</div>
+						<div class="col-12 col-sm-3 col-md-2">
+							<div class="wrap-det">
+								<p>from: <a href="profile.html">David</a></p>
+								<p class="date">10 Jan 2020</p>
+								<p class="status">received</p>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-8">
+							<div class="wrap-det-right">
+								<p>pvlse: <a href="details-page.html">Acroyoga lesson with advanced poses and photography</a></p>
+								<p class="message-body message-body-preview" id="message-body7">
+									Hi Marie. I wanted to personal thank you for the experience. My favorite lesson during Acroyoga was the distinction between lunar and solar energies and how they both relax and activate our bodies. My girlfriend and I left this…
+									Hi Marie. I wanted to personal thank you for the experience. My favorite lesson during Acroyoga was the distinction between lunar and solar energies and how they both relax and activate our bodies. My girlfriend and I left this…
+								</p>
+								<span class="btn-more" id="collapse-b7"></span>
+							</div>
+						</div>
+					</div>
+					<div class="row row-message-inbox">
+						<div class="col-12 col-sm-3 col-md-2">
+							<div class="wrap-img-user-inbox">
+								<img class="img-user-inbox" src="img/users/david.png" alt="" />
+							</div>
+						</div>
+						<div class="col-12 col-sm-3 col-md-2">
+							<div class="wrap-det">
+								<p>from: <a href="profile.html">David</a></p>
+								<p class="date">10 Jan 2020</p>
+								<p class="status">received</p>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-8">
+							<div class="wrap-det-right">
+								<p>pvlse: <a href="details-page.html">Acroyoga lesson with advanced poses and photography</a></p>
+								<p class="message-body message-body-preview" id="message-body8">
+									Hi Marie. I wanted to personal thank you for the experience. My favorite lesson during Acroyoga was the distinction between lunar and solar energies and how they both relax and activate our bodies. My girlfriend and I left this…
+									Hi Marie. I wanted to personal thank you for the experience. My favorite lesson during Acroyoga was the distinction between lunar and solar energies and how they both relax and activate our bodies. My girlfriend and I left this…
+								</p>
+								<span class="btn-more" id="collapse-b8"></span>
+							</div>
+						</div>
+					</div>
+					<div class="row row-message-inbox">
+						<div class="col-12 col-sm-3 col-md-2">
+							<div class="wrap-img-user-inbox">
+								<img class="img-user-inbox" src="img/users/david.png" alt="" />
+							</div>
+						</div>
+						<div class="col-12 col-sm-3 col-md-2">
+							<div class="wrap-det">
+								<p>from: <a href="profile.html">David</a></p>
+								<p class="date">10 Jan 2020</p>
+								<p class="status">received</p>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-8">
+							<div class="wrap-det-right">
+								<p>pvlse: <a href="details-page.html">Acroyoga lesson with advanced poses and photography</a></p>
+								<p class="message-body message-body-preview" id="message-body9">
+									Hi Marie. I wanted to personal thank you for the experience. My favorite lesson during Acroyoga was the distinction between lunar and solar energies and how they both relax and activate our bodies. My girlfriend and I left this…
+									Hi Marie. I wanted to personal thank you for the experience. My favorite lesson during Acroyoga was the distinction between lunar and solar energies and how they both relax and activate our bodies. My girlfriend and I left this…
+								</p>
+								<span class="btn-more" id="collapse-b9"></span>
+							</div>
+						</div>
+					</div>
+					<div class="row row-message-inbox">
+						<div class="col-12 col-sm-3 col-md-2">
+							<div class="wrap-img-user-inbox">
+								<img class="img-user-inbox" src="img/users/david.png" alt="" />
+							</div>
+						</div>
+						<div class="col-12 col-sm-3 col-md-2">
+							<div class="wrap-det">
+								<p>from: <a href="profile.html">David</a></p>
+								<p class="date">10 Jan 2020</p>
+								<p class="status">received</p>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-8">
+							<div class="wrap-det-right">
+								<p>pvlse: <a href="details-page.html">Acroyoga lesson with advanced poses and photography</a></p>
+								<p class="message-body message-body-preview" id="message-body10">
+									Hi Marie. I wanted to personal thank you for the experience. My favorite lesson during Acroyoga was the distinction between lunar and solar energies and how they both relax and activate our bodies. My girlfriend and I left this…
+									Hi Marie. I wanted to personal thank you for the experience. My favorite lesson during Acroyoga was the distinction between lunar and solar energies and how they both relax and activate our bodies. My girlfriend and I left this…
+								</p>
+								<span class="btn-more" id="collapse-b10"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 wrap-pagination">
+					<div aria-label="Page navigation">
+						<ul class="pagination justify-content-center">
+							<li class="page-item disabled">
+								<a class="page-link page-link-prev" href="#" tabindex="-1">Previous</a>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link page-link-active" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item">
+								<a class="page-link page-link-next" href="#">Next</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 footer-links">
+				<div class="text-center">
+					© 2020 PVLSE - All rights reserved
+				</div>
+				<a data-toggle="modal" data-target="#modalPrivacy" class="link">Privacy Policy</a>
+				<a data-toggle="modal" data-target="#termsModal" class="link">Community Guidelines</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="modal fade message-modal" id="messageModal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog message-modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<div class="clearfix"></div>
+			</div>
+			<div class="modal-body">
+				<h1 class="modal-title">New message</h1>
+				<form>
+					<div class="row row-form">
+						<div class="col-lg-12 col-xs-12">
+							<label>To <span class="required">*</span></label>
+							<select class="form-control custom-select">
+								<option value="0">Marie Smith</option>
+								<option value="1">David J.</option>
+								<option value="2">Annie D.</option>
+							</select>
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-lg-12 col-xs-12">
+							<label>Pvlse <span class="required">*</span></label>
+							<select class="form-control custom-select">
+								<option value="0">Acroyoga lesson with advanced poses and photography</option>
+								<option value="1">Acroyoga lesson with advanced poses and photography</option>
+								<option value="2">Acroyoga lesson with advanced poses and photography</option>
+							</select>
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-lg-12 col-xs-12">
+							<label>Pvlse <span class="required">*</span></label>
+							<textarea class="form-control">Acroyoga lesson with advanced poses and photography
+							</textarea>
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-7">
+							<a href="#" class="link">Delete draft</a>
+						</div>
+						<div class="col-1">
+							<span class="upload-file"></span>
+						</div>
+						<div class="col-4">
+							<a href="#" class="btn btn-primary form-btn-right">New message</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="logout-part">
+	<div class="box">
+		<div class="close">X</div>
+		<div class="txt">Are you sure you want to quit?</div>
+		<div class="btns">
+			<button class="cancel-logout btn">CANCEL</button>
+			<button class="do-logout btn">LOG OUT</button>
+		</div>
+	</div>	
+</div>
+
+<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="js/vendor/jquery-3.3.1.min.js"></script>
+<script src="js/vendor/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/vendor/moment.min.js"></script>
+
+
+<script>
+	$("#collapse-b1").click(function(){
+		$("#collapse-b1").toggleClass("btn-less");
+		$("#message-body1").toggleClass("message-body-preview");
+	});
+	$("#collapse-b2").click(function(){
+		$("#collapse-b2").toggleClass("btn-less");
+		$("#message-body2").toggleClass("message-body-preview");
+	});
+	$("#collapse-b3").click(function(){
+		$("#collapse-b3").toggleClass("btn-less");
+		$("#message-body3").toggleClass("message-body-preview");
+	});
+	$("#collapse-b4").click(function(){
+		$("#collapse-b4").toggleClass("btn-less");
+		$("#message-body4").toggleClass("message-body-preview");
+	});
+	$("#collapse-b5").click(function(){
+		$("#collapse-b5").toggleClass("btn-less");
+		$("#message-body5").toggleClass("message-body-preview");
+	});
+	$("#collapse-b6").click(function(){
+		$("#collapse-b6").toggleClass("btn-less");
+		$("#message-body6").toggleClass("message-body-preview");
+	});
+	$("#collapse-b7").click(function(){
+		$("#collapse-b7").toggleClass("btn-less");
+		$("#message-body7").toggleClass("message-body-preview");
+	});
+	$("#collapse-b8").click(function(){
+		$("#collapse-b8").toggleClass("btn-less");
+		$("#message-body8").toggleClass("message-body-preview");
+	});
+	$("#collapse-b9").click(function(){
+		$("#collapse-b9").toggleClass("btn-less");
+		$("#message-body9").toggleClass("message-body-preview");
+	});
+	$("#collapse-b10").click(function(){
+		$("#collapse-b10").toggleClass("btn-less");
+		$("#message-body10").toggleClass("message-body-preview");
+	});
+</script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+/*!
+ *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/font-awesome/fontawesome-webfont.eot?v=4.4.0');
+  src: url('../fonts/font-awesome/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'),
+  url('../fonts/font-awesome/fontawesome-webfont.woff2?v=4.4.0') format('woff2'),
+  url('../fonts/font-awesome/fontawesome-webfont.woff?v=4.4.0') format('woff'),
+  url('../fonts/font-awesome/fontawesome-webfont.ttf?v=4.4.0') format('truetype'),
+  url('../fonts/font-awesome/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	&:before{
+		content: "";
+	}
+}
+/* makes the font 33% larger relative to the icon container */
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.fa-2x {
+  font-size: 2em;
+}
+.fa-3x {
+  font-size: 3em;
+}
+.fa-4x {
+  font-size: 4em;
+}
+.fa-5x {
+  font-size: 5em;
+}
+.fa-chevron-right:before {
+  content: "\f054";
+}
+.fa-arrow-right:before {
+  content: "\f061";
+}
+.fa-twitter:before {
+  content: "\f099";
+}
+.fa-facebook-f:before,
+.fa-facebook:before {
+  content: "\f09a";
+}
+.fa-linkedin:before {
+  content: "\f0e1";
+}
+.fa-eye-slash:before{
+  content: "\f070";
+}
+.fa-star:before {
+  content: "\f005";
+}
+.fa-heart:before {
+  content: "\f004";
+}
+.fa-heart-o:before {
+  content: "\f08a";
+}
+.fa-pencil:before {
+  content: "\f040";
+}
+.fa-remove:before, .fa-close:before, .fa-times:before {
+  content: "\f00d";
+}
+.fa-trash:before {
+  content: "\f1f8";
+}

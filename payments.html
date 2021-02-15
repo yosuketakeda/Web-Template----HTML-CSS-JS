@@ -1,0 +1,330 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>PVLSE | Create pvlse</title>
+	<meta name="description" content="PVLSE - Joined pvlses page">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Place favicon.ico in the root directory -->
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+	<link rel="icon" href="favicon.png" type="image/x-icon"/>
+	<link rel="stylesheet" href="sass/all-fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="js/vendor/jquery.datetimepicker.css" />
+	<link rel="stylesheet" href="sass/screen.css">
+
+</head>
+
+<body class="page category">
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+	your browser</a> to improve your experience and security.</p>
+<![endif]-->
+<header>
+	<nav>
+		<div class="container container-top">
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title>
+						<path stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+				</span>
+			</button>
+			<a href="index.html" class="logo">
+				<img src="img/logo.svg" alt=""/>
+			</a>
+			<div class="navbar row" id="navbar">
+				<div class="col-12 col-sm-12 col-md-8 col-lg-8 nav-menu-left">
+					<span>
+						<span class="nav-link nav-link-install-text">Install app</span>
+						<a href="https://apps.apple.com/us/app/pvlse/id1409396043" class="nav-link nav-icon apple"></a>
+						<a href="https://play.google.com/store/apps/details?id=com.thepvlse.app&hl=en" class="nav-link nav-icon google-play"></a>
+					</span>
+				</div>
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 nav-menu-right">
+					<a href="create-pvlse.html" class="nav-link nav-create">+CREATE</a>
+					<a href="wishlist.html" class="nav-link nav-icon wishlist"></a>
+					<a href="#" class="nav-link nav-icon inbox"></a>
+					<div class="dropdown dropdown-account">
+						<a href="#" class="nav-link nav-account selected" data-toggle="dropdown" aria-expanded="false">
+							<img src="img/users/user1.png" alt="" class="nav-avatar"/>
+						</a>
+						<div class="dropdown-menu dropdown-toggle-admin" id="dropdown-toggle-admin">
+							<a href="my-profile.html" class="dropdown-nav-link">
+								My profile
+							</a>
+							<a href="dashboard.html" class="dropdown-nav-link">
+								Dashboard
+							</a>
+							<a href="wallet.html" class="dropdown-nav-link">
+								Wallet
+							</a>
+							<a href="payments.html" class="dropdown-nav-link active">
+								Payments & Cashout
+							</a>
+							<a href="joined-pvlses.html" class="dropdown-nav-link">
+								Joined pvlses <span>(9 upcoming)</span>
+							</a>
+							<a href="created-pvlses.html" class="dropdown-nav-link">
+								Created pvlses <span>(12 upcoming)</span>
+							</a>
+							<!--<a href="index.html" class="dropdown-nav-link">
+								Log Out
+							</a>-->
+							<button class="logout-btn">Log Out</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>
+<section class="section payments">
+	<div class="container">
+		<div class="section-wrap-titles">
+			<div class="breadcrumb-pvlses">
+				<a href="index.html" class="breadcrumb-item">
+					My account
+				</a>
+				<div class="breadcrumb-sep">/</div>
+				<div>Payments</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-6 col-lg-6">
+				<form class="form-create-pvlse form-payments">
+					<div class="row row-form">
+						<div class="col-12">
+							<h2 class="section-title section-title-account">Payment methods</h2>
+							<p class="subtitle">Your cards</p>
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-12 wrap-payment-card">
+							<div class="payment-card-icon"></div>
+							<div class="payment-card-det">
+								<div class="payment-card-det-name">ING Bank N.V.</div>
+								<div>VISA *0156</div>
+							</div>
+							<div class="payment-card-links">
+								<a href="#"><img src="img/payment/edit_icon.png"></a>
+								<a href="#"><img src="img/payment/close_icon.png"></a>
+							</div>
+						</div>
+					</div>
+					<div class="row row-form">
+						<a class="col-12 wrap-payment-card wrap-add-card collapsed" data-toggle="collapse" href="#collapseNewCard" role="button" aria-expanded="false" aria-controls="collapseExample">
+							<span class="payment-card-icon payment-add-card-icon"></span>
+							<span>Add new card</span>
+							<i class="collapse-icon"></i>
+						</a>
+					</div>
+					<div class="collapse" id="collapseNewCard">
+						<div class="row row-form">
+							<div class="col-12">
+								<p class="payments-description">
+									Please add your credit card details here where they will be safely stored via
+Stripe. This enables you to top up your wallet or pay for pvlses directly. We pay creators only once the pvlse has taken place. 
+								</p>
+							</div>
+						</div>
+						<div class="row row-form">
+							<div class="col-12">
+								<label>Name on card</label>
+								<input class="form-control" value="" placeholder="Full name" type="text" required/>
+							</div>
+						</div>
+						<div class="row row-form">
+							<div class="col-12 col-md-6">
+								<label>Card number</label>
+								<input class="form-control" placeholder="xxxx xxxx xxxx xxxx" type="text" />
+							</div>
+							<div class="col-6 col-md-3">
+								<label>Expiry date</label>
+								<input type="text" class="form-control datetimepicker-input" id="datetimepicker1" data-toggle="datetimepicker" data-target="#datetimepicker1" placeholder="dd/mm/yyyy" required/>
+							</div>
+							<div class="col-6 col-md-3">
+								<label>CVV code</label>
+								<input class="form-control" value="xxx" type="text" required/>
+							</div>
+						</div>
+						<div class="">
+							<button class="btn btn-primary form-btn-right">
+								SAVE
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col-12 col-md-6 col-lg-6">
+				<form class="form-create-pvlse form-payments form-payments2">
+					<h2 class="section-title section-title-account">Cashout options</h2>					
+					<div class="row row-form">
+						<div class="col-12">
+							<div class="custom-control custom-checkbox custom-radio-payment">
+								<input type="checkbox" class="custom-control-input" id="payment-type" name="payment-type">
+								<label class="custom-control-label" for="payment-type">Bank account</label>
+							</div>
+						</div>
+						<div class="col-12 col-md-12">
+							<label>Account holder name/ Name of business or charity</label>
+							<input class="form-control" placeholder="Name" type="text"/>
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-12 col-md-12">
+							<label>Address</label>
+							<input class="form-control" placeholder="Address" type="text" />
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-12 col-md-6">
+							<label>Postcode</label>
+							<input class="form-control" placeholder="Postcode" type="text" />
+						</div>
+						<div class="col-12 col-md-6">
+							<label>City</label>
+							<input class="form-control" placeholder="City" type="text" />
+						</div>
+					</div>
+					<div class="row row-form">
+						<div class="col-12">
+							<label>Country</label>
+							<input class="form-control" placeholder="Country" type="text" />
+						</div>						
+					</div>
+					<div class="row row-form">
+						<div class="col-12">
+							<label>Bank name</label>
+							<input class="form-control" placeholder="Bank name" type="text" />
+						</div>						
+					</div>
+					<div class="row row-form">
+						<div class="col-6">
+							<label>Account number of IBAN</label>
+							<input class="form-control" placeholder="xxxxxxxxxxxxxxxx" type="text" />
+						</div>
+						<div class="col-6">
+							<label>Sort code or SWIFT</label>
+							<input class="form-control" placeholder="Sort code or SWIFT" type="text" />
+						</div>
+					</div>					
+					<div class="row row-form">
+						<div class="col-6 col-md-3 col-lg-3">
+							<label>Currency</label>
+							<div class="sel-custom selector">
+								<select class="customized-select">
+									<option value="0">GBP</option>
+									<option value="1">EUR</option>
+									<option value="2">USD</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-6 col-md-9 col-lg-9">
+							<button class="btn btn-primary form-btn-right">
+								SAVE
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 footer-links">
+				<div class="text-center">
+					© 2020 PVLSE - All rights reserved
+				</div>
+				<a data-toggle="modal" data-target="#modalPrivacy" class="link">Privacy Policy</a>
+				<a data-toggle="modal" data-target="#termsModal" class="link">Community Guidelines</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="logout-part">
+	<div class="box">
+		<div class="close">×</div>
+		<div class="txt">Are you sure you want to quit?</div>
+		<div class="btns">
+			<button class="cancel-logout btn">CANCEL</button>
+			<button class="do-logout btn">LOG OUT</button>
+		</div>
+	</div>	
+</div>
+<div class="receive-msg">
+	<div class="title-bar"><span>Message</span><span class="close">×</span></div>
+	<div class="row">
+		<div class="col-3">
+			<div class="avarta">
+				<img src="img/users/user2.png">
+			</div>
+		</div>
+		<div class="col-6">
+			<p class="name">James</p>
+			<p class="comment">Acroyoga lesson with advanced...</p>
+		</div>
+		<div class="col-3">
+			<button class="reply">REPLY</button>
+		</div>
+	</div>
+</div>
+<div class="new-msg" id="new-msg">
+	<div class="title-bar">
+		<span class="blank">New message</span>
+		<span class="close">×</span>
+		<span class="mini">_</span>
+		<span class="max">□</span>
+	</div>
+	<div class="content">
+		<form>
+			<div class="item">
+				<span>To</span>
+				<input type="text" name="msg_to" />
+			</div>
+			<div class="item">
+				<span>Subject</span>
+				<input type="text" name="msg_subject" />
+			</div>
+			<div class="msg-area">
+				<textarea class="msg-body" rows="5" name="msg-body"></textarea>
+			</div>
+			<div class="action">
+				<button class="send-btn">SEND</button>
+				<span class="del"><img src="img/del.png"></span>
+			</div>
+		</form>		
+	</div>
+</div>
+<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="js/vendor/jquery-3.3.1.min.js"></script>
+<script src="js/vendor/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/vendor/moment.min.js"></script>
+
+<script type="text/javascript" src="js/vendor/jquery.datetimepicker.js"></script>
+
+<script src="js/main.js"></script>
+
+<script type="text/javascript">
+	$(function () {
+		$.datetimepicker.setDateFormatter({
+			parseDate: function (date, format) {
+				var d = moment(date, format);
+				return d.isValid() ? d.toDate() : false;
+			},
+			formatDate: function (date, format) {
+				return moment(date).format(format);
+			},
+		});
+		$('#datetimepicker1').datetimepicker({
+			timepicker: false,
+			format: 'd/m/Y'
+		});
+	});
+</script>
+
+</body>
+</html>
